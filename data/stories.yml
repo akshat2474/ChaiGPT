@@ -1,0 +1,60 @@
+version: "3.1"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: fetch information story
+  steps:
+  - intent: fetch_info
+  - action: action_fetch_info
+
+- story: interpret emotion story
+  steps:
+  - intent: interpret_emotion
+  - action: action_interpret_emotion
+
+- story: joke story
+  steps:
+    - intent: tell_joke
+    - action: action_tell_joke
+
+- story: user asks for weather
+  steps:
+  - intent: tell_weather
+  - action: action_tell_weather
+
+- story: ask cricket scores
+  steps:
+  - intent: ask_live_scores
+  - action: action_fetch_live_scores
+
+- story: calculate arithmetic
+  steps:
+  - intent: calculate
+  - action: action_calculate

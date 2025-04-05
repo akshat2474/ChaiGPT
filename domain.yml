@@ -1,0 +1,102 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - fetch_info
+  - interpret_emotion
+  - tell_weather
+  - tell_joke
+  - ask_live_scores
+  - calculate
+
+entities:
+  - city
+  - emotion
+  - sport
+  - number1
+  - number2
+
+slots:
+  city:
+    type: text
+    mappings:
+      - type: from_entity
+        entity: city
+  emotion:
+    type: text
+    mappings:
+      - type: from_text
+  sport:
+    type: text
+    mappings:
+      - type: from_text
+  number1:
+    type: float  # or int, depending on your needs
+    mappings:
+      - type: from_text  # or other mapping types as required
+  number2:
+    type: float
+    mappings:
+      - type: from_text
+  operation:
+    type: text
+    mappings:
+      - type: from_text
+responses:
+  utter_did_that_help:
+    - text: "Did that help you? Let me know if you need anything else!"
+
+  utter_cheer_up:
+    - text: "Cheer up! Things will get better soon! 😊"
+
+  utter_happy:
+    - text: "I'm glad to hear that you're feeling happy! How can I assist you further?"
+
+  utter_iamabot:
+    - text: "I am a bot created to assist you with various queries. How can I help you today?"
+
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+
+  utter_summarize_info:
+    - text: "Here is a brief summary: {summary}"
+
+  utter_emotion_interpreted:
+    - text: "It seems like you're feeling {emotion}."
+
+  utter_ask_weather:
+    - text: "Sure! Please tell me the city you want the weather for."
+
+  utter_weather_response:
+    - text: "The weather in {city} is sunny with a high of 25°C."
+
+  utter_joke:
+    - text: "Here's a joke: {joke}"
+
+  utter_ask_cricket:
+    - text: "Which cricket match do you want to know the live scores for?"
+
+  utter_cricket_score_response:
+    - text: "Fetching live cricket scores for you..."
+
+actions:
+  - action_fetch_info
+  - action_tell_weather
+  - action_tell_joke
+  - action_interpret_emotion
+  - action_fetch_live_scores
+  - action_calculate
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

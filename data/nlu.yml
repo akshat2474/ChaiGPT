@@ -1,0 +1,3166 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - what's up?
+    - howdy
+    - yo
+    - greetings
+    - sup
+    - hiya
+    - what's happening?
+    - how are you?
+    - long time no see
+    - what's new?
+    - how's it going?
+    - how's life?
+    - how are you doing?
+    - good to see you
+    - how are things?
+    - glad to see you
+    - welcome
+    - salut
+    - hi there
+    - hello everyone
+    - hey buddy
+    - how's your day?
+    - what's cooking?
+    - how's your week going?
+    - how have you been?
+    - good to have you here
+    - nice to meet you
+    - what's good?
+    - how goes it?
+    - howdy-doo
+    - hi there, friend
+    - what’s shaking?
+    - what’s buzzin'?
+    - hey, how’s it going?
+    - good to see you again
+    - hey stranger
+    - greetings and salutations
+    - what’s up, my friend?
+    - how’s everything?
+    - how are things going?
+    - happy to see you
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - take care
+    - see you soon
+    - catch you later
+    - later gator
+    - peace out
+    - I'm off
+    - until next time
+    - so long
+    - adios
+    - farewell
+    - have a good one
+    - I'm outta here
+    - later
+    - take it easy
+    - I'm heading out
+    - until we meet again
+    - I'm signing off
+    - so long, partner
+    - bye for now
+    - have a great day
+    - I’ll catch you later
+    - take care of yourself
+    - gotta run
+    - have a good evening
+    - I'm leaving now
+    - cheers
+    - later, alligator
+    - don't be a stranger
+    - I'm off to the next adventure
+    - time to say goodbye
+    - have a good rest of your day
+    - keep in touch
+    - I'll see you again soon
+    - time to go
+    - take care, buddy
+    - I'll be on my way now
+    - until next time, my friend
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - absolutely
+    - definitely
+    - sure
+    - for sure
+    - totally
+    - right
+    - sounds great
+    - you bet
+    - I'm in
+    - yes indeed
+    - positively
+    - certainly
+    - that's true
+    - I agree
+    - yes, please
+    - I would love that
+    - exactly
+    - just what I was thinking
+    - no doubt
+    - 100%
+    - affirmative
+    - you got it
+    - sure thing
+    - without a doubt
+    - yes, that works
+    - right on
+    - I'm all for it
+    - you nailed it
+    - that's a yes from me
+    - I'm game
+    - I'm on board
+    - definitely yes
+    - you are correct
+    - exactly right
+    - yes, absolutely
+    - I can agree with that
+    - I'm down with that
+    - I'm all in
+    - yes, indeed it is
+    - that's right
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - absolutely not
+    - no chance
+    - not at all
+    - not interested
+    - I refuse
+    - no thanks
+    - negative
+    - I don't agree
+    - that's a no from me
+    - I can't do that
+    - definitely not
+    - that's incorrect
+    - not a chance
+    - I don't want to
+    - I'm not up for that
+    - I disagree
+    - no, I won't
+    - I'm not interested in that
+    - I'm not in favor
+    - that’s not true
+    - no, no, no
+    - not this time
+    - I can’t agree to that
+    - no thank you
+    - I'm not comfortable with that
+    - not something I want to do
+    - not a good idea
+    - I’d rather not
+    - not for me
+    - not my cup of tea
+    - I’m good, thanks
+    - that’s a hard pass
+    - no, that's not going to happen
+    - that doesn't sound good
+    - I'm not going to
+    - that won't work for me
+    - that's a definite no
+    - I won't be doing that
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - fantastic
+    - I feel terrific
+    - I’m on top of the world
+    - feeling fantastic
+    - everything is awesome
+    - I feel like a million bucks
+    - I’m having an excellent day
+    - I'm in a great mood
+    - life is beautiful
+    - I couldn't be happier
+    - I feel fabulous
+    - I'm elated
+    - feeling great today
+    - I feel wonderful
+    - I’m bursting with joy
+    - I'm so excited
+    - I'm feeling fabulous
+    - everything is going perfectly
+    - I'm full of energy
+    - I'm feeling positive
+    - I’m feeling on fire
+    - it’s a beautiful day
+    - I feel like celebrating
+    - I'm thrilled
+    - life is treating me well
+    - I’m very optimistic
+    - everything feels just right
+    - I’m glowing with happiness
+    - I feel incredible
+    - I’m loving life
+    - I'm on cloud nine
+    - I'm feeling awesome
+    - I'm in high spirits
+    - feeling refreshed
+    - I’m feeling good
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremely sad
+    - so saad
+    - so sad
+    - feeling down
+    - I'm feeling blue
+    - everything feels off
+    - I can't shake this feeling
+    - I'm just not okay
+    - I feel let down
+    - I've had better days
+    - I'm not feeling great
+    - I'm struggling
+    - I'm feeling miserable
+    - life is tough
+    - I'm feeling low
+    - not in a good place
+    - things are not going well
+    - I'm feeling out of sorts
+    - I'm down in the dumps
+    - I'm feeling hopeless
+    - I feel lost
+    - I'm feeling overwhelmed
+    - I'm just not happy
+    - I'm having a rough time
+    - it's been a tough day
+    - I feel drained
+    - everything feels heavy
+    - I'm just tired of it all
+    - I'm feeling really down
+    - I'm feeling really stressed
+    - I feel trapped
+    - I'm not enjoying myself
+    - I'm losing hope
+    - I need a break
+    - it's all too much
+    - I'm feeling burdened
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you real?
+    - is this a robot?
+    - are you artificial intelligence?
+    - do you have feelings?
+    - can you think for yourself?
+    - are you just a program?
+    - do you understand me?
+    - how smart are you?
+    - can you talk like a human?
+    - what are you?
+    - are you capable of emotions?
+    - can you hold a conversation?
+    - do you learn from conversations?
+    - how do you work?
+    - what is your purpose?
+    - are you here to help me?
+    - are you just responding to keywords?
+    - how do I know you are a bot?
+    - can you tell me a joke?
+    - how do you feel about that?
+    - what's your favorite thing to do?
+    - do you like talking to people?
+    - how do you know what to say?
+    - are you programmed to answer questions?
+    - do you understand human emotions?
+    - how can I trust you?
+    - do you make mistakes?
+    - what happens when you don't know the answer?
+    - do you have any hobbies?
+    - can you ask me questions too?
+    - how do you learn new things?
+    - are you capable of reasoning?
+    - do you have a personality?
+    - can you give me advice?
+    - what's your favorite subject?
+    - how do you feel about the weather?
+    - can you tell me about yourself?
+    - what is your favorite movie?
+    - can you have fun?
+    - are you just a chat program?
+    - what is your favorite food?
+    - can you understand jokes?
+    - do you ever get bored?
+
+- intent: fetch_info
+  examples: |
+    - What is blockchain technology?
+    - Explain the concept of quantum computing.
+    - How does machine learning work?
+    - What is cloud computing?
+    - Tell me about augmented reality.
+    - What are microservices?
+    - Explain the concept of neural networks.
+    - How do APIs function?
+    - What is cybersecurity?
+    - Tell me about 5G technology.
+    - How does artificial intelligence differ from human intelligence?
+    - What is the internet of things (IoT)?
+    - Explain edge computing.
+    - What are chatbots and how do they work?
+    - What is the difference between HTTP and HTTPS?
+    - Explain the role of DevOps in software development.
+    - What are the advantages of open-source software?
+    - How does data encryption work?
+    - What is the purpose of a database?
+    - Explain the concept of responsive web design.
+    - What is a software development life cycle (SDLC)?
+    - How does version control work?
+    - What are the benefits of using virtual machines?
+    - Explain the concept of serverless architecture.
+    - What is a content management system (CMS)?
+    - How do search engines work?
+    - What are the different types of programming languages?
+    - Explain the role of a web developer.
+    - What are the key features of a mobile app?
+    - How does the software testing process work?
+    - What is the difference between front-end and back-end development?
+    - Explain the concept of agile development.
+    - What is continuous integration and delivery (CI/CD)?
+    - How does data mining work?
+    - What is a domain name system (DNS)?
+    - Explain the importance of user experience (UX) design.
+    - What are the different types of software licenses?
+    - How does cloud storage work?
+    - What is blockchain's impact on finance?
+    - Explain the differences between TCP and UDP.
+    - What is the purpose of an operating system?
+    - How do machine learning algorithms learn?
+    - What are the advantages of using RESTful APIs?
+    - Explain the concept of DevSecOps.
+    - What is the difference between SaaS, PaaS, and IaaS?
+    - How do you secure a web application?
+    - What are the principles of UX design?
+    - Explain the concept of a data warehouse.
+    - What is a firewall, and how does it work?
+    - How do recommendation systems work?
+    - What are the uses of big data?
+    - Explain the concept of software as a service (SaaS).
+    - What is a microcontroller?
+    - How does image recognition work in AI?
+    - What are the challenges of cloud computing?
+    - Explain the basics of web hosting.
+    - What is the role of a system administrator?
+    - How do you optimize a website for search engines (SEO)?
+    - What are the differences between Linux and Windows?
+    - Explain the concept of natural language processing (NLP).
+    - How does quantum encryption work?
+    - What are the basics of data visualization?
+    - Explain the importance of digital marketing.
+    - What is the role of artificial intelligence in healthcare?
+    - How does virtual reality differ from augmented reality?
+    - What are the best practices for mobile app development?
+    - Explain the concept of an information system.
+    - What is the Internet Protocol (IP)?
+    - How do you conduct a usability test?
+    - What are the different types of data structures?
+    - Explain the concept of load balancing.
+    - What is a programming paradigm?
+    - How does a neural network function?
+    - What are the ethical implications of AI?
+    - Explain the differences between qualitative and quantitative data.
+    - What are the key components of a web application?
+    - How do you measure website performance?
+    - What is data governance?
+    - Explain the concept of a software framework.
+    - What are the benefits of using Docker?
+    - How does artificial intelligence improve customer service?
+    - What are the fundamentals of network security?
+    - Explain the concept of a virtual private network (VPN).
+    - How do you implement a database schema?
+    - What are the challenges of IoT security?
+    - Explain the role of a product manager in tech.
+    - What is the importance of data integrity?
+    - How does digital forensics work?
+    - What are the benefits of agile project management?
+    - Explain the concept of continuous deployment.
+    - What is a cryptographic hash function?
+    - How do you protect sensitive data?
+    - What are the different types of software testing?
+    - Explain the importance of accessibility in web design.
+    - What are the components of a computer network?
+    - How does augmented reality enhance user experience?
+    - What is the significance of API documentation?
+    - Explain the concept of server-side rendering.
+    - How do you create a REST API?
+    - What are the benefits of using cloud-based solutions?
+    - Explain the concept of a knowledge base.
+    - What is the purpose of a version control system?
+    - How does artificial intelligence impact job markets?
+    - Explain the principles of responsive web design.
+    - What are the common types of cyber threats?
+    - How does a content delivery network (CDN) work?
+    - Explain the concept of a software development kit (SDK).
+    - What is the role of a data scientist?
+    - How do you secure a wireless network?
+    - What are the best practices for software documentation?
+    - Explain the differences between procedural and object-oriented programming.
+    - Tell me about blockchain
+    - What is machine learning?
+    - Explain quantum computing
+    - Give me a summary of Python
+    - What can you tell me about AI?
+    - Explain the concept of neural networks
+    - What is the internet of things?
+    - Tell me about cloud computing
+    - What are the benefits of big data?
+    - Explain virtual reality
+    - What is a database?
+    - How does cryptocurrency work?
+    - What is the purpose of an API?
+    - Can you tell me about data science?
+    - Explain the basics of HTML
+    - What is augmented reality?
+    - Tell me about ethical hacking
+    - What are the differences between front-end and back-end development?
+    - Explain what a software engineer does
+    - What is cybersecurity?
+    - Tell me about mobile app development
+    - What is an operating system?
+    - Explain the concept of agile methodology
+    - What are microservices?
+    - Can you explain version control?
+    - What is responsive design?
+    - Tell me about search engine optimization (SEO)
+    - What is machine learning used for?
+    - Explain how the blockchain works
+    - What is the difference between AI and machine learning?
+    - Tell me about data visualization
+    - What is DevOps?
+    - Can you explain continuous integration?
+    - What are the components of a computer?
+    - Tell me about ethical AI
+    - What is the role of a data analyst?
+    - Explain what a frontend framework is
+    - What is a programming language?
+    - Tell me about software testing
+    - What are the benefits of using cloud storage?
+    - What is a user interface?
+    - Can you explain the term 'user experience'?
+    - What are some popular programming languages?
+    - What is the role of machine learning in healthcare?
+    - Explain the concept of a data lake
+    - What are the benefits of regular exercise?
+    - Tell me about a balanced diet.
+    - How does stress affect the body?
+    - Explain the importance of hydration.
+    - What are the symptoms of diabetes?
+    - Tell me about mindfulness meditation.
+    - What are the effects of sleep deprivation?
+    - How can I improve my immune system?
+    - What are common nutritional deficiencies?
+    - Tell me about heart disease prevention.
+    - What is the importance of vaccinations?
+    - Explain the concept of holistic health.
+    - What are the benefits of yoga?
+    - How does smoking affect health?
+    - What are the symptoms of anxiety disorders?
+    - Tell me about the impact of obesity.
+    - What is the role of fiber in diet?
+    - Explain the importance of mental wellness.
+    - How can I manage stress effectively?
+    - What are the benefits of drinking green tea?
+    - Tell me about the importance of sleep.
+    - How does nutrition impact mental health?
+    - What are the signs of a stroke?
+    - Explain the concept of mental resilience.
+    - What are the benefits of regular health check-ups?
+    - How can I reduce my risk of heart disease?
+    - Tell me about the effects of high blood pressure.
+    - What are the dangers of excessive alcohol consumption?
+    - Explain the importance of physical activity for children.
+    - How does caffeine affect the body?
+    - What are the health benefits of meditation?
+    - Tell me about the effects of stress on mental health.
+    - How can I improve my digestion?
+    - What are the benefits of eating whole grains?
+    - Explain the importance of self-care.
+    - What are the common symptoms of depression?
+    - Tell me about the impact of sedentary lifestyle.
+    - How does a healthy diet contribute to longevity?
+    - What are the signs of vitamin deficiency?
+    - Explain the importance of mental health awareness.
+    - How can I incorporate exercise into my daily routine?
+    - What are the benefits of outdoor activities?
+    - Tell me about the role of antioxidants in health.
+    - How does emotional health affect physical health?
+    - What are the effects of too much sugar in the diet?
+    - Explain the importance of community support for mental health.
+    - What are the benefits of a plant-based diet?
+    - Tell me about the impact of nutrition on pregnancy.
+    - How can I improve my sleep hygiene?
+    - What are the effects of chronic stress?
+    - Explain the concept of health equity.
+    - What are the benefits of pet ownership for mental health?
+    - Tell me about the importance of hydration for athletes.
+    - How does regular physical activity benefit mental health?
+    - What are the signs of burnout?
+    - Explain the importance of goal-setting in fitness.
+    - How can I maintain a healthy work-life balance?
+    - What are the risks of yo-yo dieting?
+    - Tell me about the effects of processed foods on health.
+    - What are the benefits of regular stretching?
+    - How can I support my mental health during difficult times?
+    - What are the signs of food allergies?
+    - Explain the importance of mental health days.
+    - How does nutrition affect cognitive function?
+    - Tell me about the effects of gluten on health.
+    - What are the benefits of group exercise?
+    - How can I reduce anxiety naturally?
+    - Explain the importance of mindfulness in daily life.
+    - What are the symptoms of chronic fatigue syndrome?
+    - Tell me about the impact of technology on sleep.
+    - How does regular check-ups benefit overall health?
+    - What are the signs of healthy eating habits?
+    - Explain the concept of food security.
+    - What are the benefits of practicing gratitude?
+    - How can I support my immune system naturally?
+    - Tell me about the impact of childhood obesity.
+    - How does mental health influence physical health outcomes?
+    - What are the risks of neglecting mental health?
+    - Explain the importance of regular exercise for older adults.
+    - What are the benefits of engaging in hobbies for mental health?
+    - How can I create a balanced meal plan?
+    - What are the effects of vitamin D deficiency?
+    - Explain the importance of social connections for mental health.
+    - What are the benefits of laughing for mental health?
+    - How does exercise influence mood?
+    - Tell me about the role of nutrition in preventing chronic diseases.
+    - What are the common signs of dehydration?
+    - How can I improve my mental clarity?
+    - What are the effects of poor posture on health?
+    - Explain the concept of preventive healthcare.
+    - What are the best travel destinations?
+    - Tell me about travel insurance.
+    - What should I pack for a trip to Europe?
+    - Explain the visa process for traveling abroad.
+    - How can I find cheap flights?
+    - What are the must-see attractions in Paris?
+    - Tell me about cultural etiquette in Japan.
+    - What are the health precautions for traveling to Africa?
+    - Explain the concept of sustainable tourism.
+    - What are the best travel apps?
+    - How to travel on a budget?
+    - Tell me about solo travel safety tips.
+    - What is the best time to visit Thailand?
+    - How to plan a road trip?
+    - What are the requirements for international travel?
+    - Tell me about popular travel blogs.
+    - What to do in case of a travel emergency?
+    - How to deal with jet lag?
+    - What are the best travel accessories?
+    - Tell me about volunteer travel opportunities.
+    - How do I choose the right accommodation?
+    - What are the top-rated tourist spots in Italy?
+    - Explain the importance of travel vaccinations.
+    - How can I find local food experiences while traveling?
+    - What are the most scenic routes for a road trip?
+    - Tell me about travel apps for language translation.
+    - How to pack light for a long trip?
+    - What are the benefits of using a travel agent?
+    - Tell me about the impact of tourism on local economies.
+    - What are the best practices for traveling with pets?
+    - Explain the importance of travel itineraries.
+    - How do I navigate public transportation in a new city?
+    - What are the must-know tips for first-time travelers?
+    - Tell me about the top cultural festivals around the world.
+    - How can I ensure my safety while traveling alone?
+    - What are the best places to visit in South America?
+    - Explain the benefits of using a travel rewards credit card.
+    - What are the challenges of traveling during a pandemic?
+    - Tell me about travel photography tips.
+    - How to travel sustainably and reduce carbon footprint?
+    - What are the best travel gadgets for frequent travelers?
+    - Tell me about the benefits of traveling by train.
+    - How to plan a family-friendly vacation?
+    - What are the best travel destinations for adventure seekers?
+    - Explain the concept of gap year travel.
+    - How can I experience local culture while traveling?
+    - Tell me about the importance of travel reviews.
+    - What are the best travel destinations for food lovers?
+    - How do I stay connected while traveling abroad?
+    - What are the top luxury travel destinations?
+    - Tell me about the most picturesque hiking trails.
+    - How to budget for a trip to Europe?
+    - What are the key travel safety tips for women?
+    - Explain the concept of travel hacking.
+    - How can I avoid tourist traps while traveling?
+    - What are the benefits of traveling during off-peak seasons?
+    - Tell me about the best ways to document travel experiences.
+    - How to choose the right luggage for my trip?
+    - What are the must-see landmarks in the USA?
+    - Explain the importance of travel insurance coverage.
+    - How can I find local events while traveling?
+    - What are the best practices for exchanging currency?
+    - Tell me about eco-friendly travel options.
+    - How to plan a trip to a remote destination?
+    - What are the top tips for road trip safety?
+    - Explain the concept of volunteer tourism.
+    - How can I create a flexible travel itinerary?
+    - What are the best travel resources for planning?
+    - Tell me about the impact of travel on mental health.
+    - How to choose the right travel insurance policy?
+    - What are the benefits of group travel?
+    - Explain the importance of cultural sensitivity while traveling.
+    - What are the top movies of the year?
+    - Tell me about the latest music releases.
+    - What are the most popular TV shows?
+    - Explain the concept of streaming services.
+    - How does the film industry work?
+    - Tell me about the history of jazz music.
+    - What are the best books to read this year?
+    - Explain the difference between fiction and non-fiction.
+    - What are the upcoming concerts?
+    - Tell me about the award shows.
+    - What is the impact of social media on entertainment?
+    - How to start a book club?
+    - What are the best video games of all time?
+    - Tell me about popular board games.
+    - What are the differences between movies and series?
+    - Explain the concept of fan fiction.
+    - What is the significance of film festivals?
+    - Tell me about the evolution of rock music.
+    - What are the most successful video game franchises?
+    - How to get into acting?
+    - What are the latest trends in the music industry?
+    - Tell me about the best animated films.
+    - How do streaming platforms affect traditional media?
+    - Explain the concept of reality TV.
+    - What are the key elements of a successful podcast?
+    - Tell me about the impact of celebrity culture.
+    - What are the different genres of literature?
+    - How to analyze a film critically?
+    - What are the best documentaries to watch?
+    - Tell me about the importance of diversity in media.
+    - What are the most anticipated video game releases?
+    - Explain the concept of virtual reality in entertainment.
+    - What are the best resources for learning music?
+    - Tell me about the influence of art on culture.
+    - How to promote an upcoming album or film?
+    - What are the most popular streaming platforms?
+    - Tell me about the role of critics in the film industry.
+    - What are the latest trends in television?
+    - Explain the concept of independent films.
+    - What are the best practices for creating engaging content?
+    - Tell me about the influence of social media on musicians.
+    - What are the key factors in writing a bestseller?
+    - How to navigate the world of online gaming?
+    - What are the best ways to discover new artists?
+    - Tell me about the role of music in film.
+    - How does the entertainment industry impact social change?
+    - What are the top-rated documentaries of the year?
+    - Tell me about the significance of live performances.
+    - What are the latest trends in fashion and entertainment?
+    - Explain the concept of cross-media storytelling.
+    - How to create a successful YouTube channel?
+    - What are the benefits of attending film festivals?
+    - Tell me about the evolution of video game graphics.
+    - What are the benefits of lifelong learning?
+    - How can I improve my study habits?
+    - Tell me about online learning platforms.
+    - What are the different types of learning styles?
+    - Explain the importance of critical thinking in education.
+    - How can I prepare for exams effectively?
+    - What are the best practices for writing a research paper?
+    - Tell me about the significance of extracurricular activities.
+    - What is the role of technology in modern education?
+    - How to choose the right college for my major?
+    - What are the benefits of reading for pleasure?
+    - Explain the concept of flipped classrooms.
+    - How can I enhance my time management skills?
+    - Tell me about the importance of mentorship in education.
+    - What are the different approaches to teaching?
+    - How can I develop effective communication skills?
+    - Tell me about the benefits of studying abroad.
+    - Explain the significance of educational psychology.
+    - How to create an effective study schedule?
+    - What are the challenges of remote learning?
+    - Tell me about the importance of cultural competence in education.
+    - What are the advantages of collaborative learning?
+    - How can I improve my public speaking skills?
+    - Explain the concept of project-based learning.
+    - What are the benefits of critical reading?
+    - Tell me about the significance of diversity in education.
+    - How can I stay motivated in my studies?
+    - Explain the importance of setting educational goals.
+    - What are the best strategies for group projects?
+    - Tell me about the impact of standardized testing.
+    - How to find scholarships for college?
+    - What are the benefits of early childhood education?
+    - Explain the concept of experiential learning.
+    - How can I improve my research skills?
+    - Tell me about the significance of arts education.
+    - What are the challenges of teaching in diverse classrooms?
+    - How to create a positive learning environment?
+    - Explain the role of assessment in education.
+    - What are the benefits of peer tutoring?
+    - Tell me about the importance of emotional intelligence in learning.
+    - How can I develop a growth mindset?
+    - What are the key components of effective lesson planning?
+    - Explain the impact of socio-economic factors on education.
+    - How can I cultivate creativity in the classroom?
+    - Tell me about the benefits of dual-language programs.
+    - What are the differences between public and private education?
+    - How to evaluate the credibility of sources for research?
+    - What are the best practices for teaching critical thinking?
+    - Tell me about the role of homework in education.
+    - What are the advantages of online degrees?
+    - Explain the importance of teacher training.
+    - How can I support students with learning disabilities?
+    - Tell me about the impact of technology on student engagement.
+    - What is artificial intelligence?
+    - How does machine learning work?
+    - Explain the difference between AI and machine learning.
+    - What are neural networks?
+    - Tell me about deep learning.
+    - How is AI used in healthcare?
+    - What are the ethical concerns surrounding AI?
+    - Explain natural language processing.
+    - How does facial recognition technology work?
+    - What is the Turing test?
+    - How is AI changing the job market?
+    - What are expert systems in AI?
+    - Explain the concept of computer vision.
+    - How does AI impact data analysis?
+    - What is the role of AI in autonomous vehicles?
+    - What is cybersecurity?
+    - How do firewalls work?
+    - Explain the concept of encryption.
+    - What is a VPN and how does it work?
+    - Tell me about common types of cyberattacks.
+    - How can I protect my online privacy?
+    - What is two-factor authentication?
+    - Explain the importance of software updates.
+    - What is phishing and how can I avoid it?
+    - How do antivirus programs work?
+    - What is a DDoS attack?
+    - Explain the concept of ethical hacking.
+    - How can businesses improve their cybersecurity?
+    - What is the dark web?
+    - Tell me about cybersecurity careers.
+    - What is blockchain technology?
+    - How does cryptocurrency work?
+    - Explain the concept of decentralization in blockchain.
+    - What are smart contracts?
+    - Tell me about Bitcoin mining.
+    - How is blockchain used beyond cryptocurrency?
+    - What is a distributed ledger?
+    - Explain the difference between public and private blockchains.
+    - How does blockchain ensure security?
+    - What is a blockchain wallet?
+    - Tell me about Ethereum and its applications.
+    - How can blockchain impact supply chain management?
+    - What are the environmental concerns of blockchain?
+    - Explain the concept of tokenization in blockchain.
+    - How might blockchain affect financial services.
+    - What is cloud computing?
+    - Explain the types of cloud services (IaaS, PaaS, SaaS).
+    - How does cloud storage work?
+    - What are the benefits of cloud computing for businesses?
+    - Tell me about major cloud service providers.
+    - How does cloud computing enhance scalability?
+    - What are the security concerns in cloud computing?
+    - Explain the concept of serverless computing.
+    - How does edge computing relate to cloud computing?
+    - What is a hybrid cloud?
+    - Tell me about cloud migration strategies.
+    - How does cloud computing impact remote work?
+    - What is cloud orchestration?
+    - Explain the pay-as-you-go model in cloud services.
+    - How does cloud computing support big data analytics.
+    - What is the Internet of Things (IoT)?
+    - How do smart home devices work?
+    - Explain the concept of connected devices.
+    - What are the applications of IoT in healthcare?
+    - Tell me about industrial IoT.
+    - How does IoT impact urban planning and smart cities?
+    - What are the security concerns with IoT devices?
+    - Explain how IoT devices communicate.
+    - How does IoT enhance energy management?
+    - What is edge computing in IoT?
+    - Tell me about wearable IoT devices.
+    - How does IoT affect the automotive industry?
+    - What is the role of 5G in IoT development?
+    - Explain the concept of digital twins in IoT.
+    - How does IoT contribute to environmental monitoring.
+    - What is 5G technology?
+    - How does 5G differ from 4G?
+    - Explain the benefits of 5G networks.
+    - What are the potential applications of 5G?
+    - Tell me about 5G infrastructure requirements.
+    - How will 5G impact mobile gaming?
+    - What are the health concerns surrounding 5G?
+    - Explain mmWave technology in 5G.
+    - How does 5G support the Internet of Things?
+    - What is network slicing in 5G?
+    - Tell me about 5G's role in autonomous vehicles.
+    - How will 5G affect rural connectivity?
+    - What are the challenges in implementing 5G globally?
+    - Explain the concept of beamforming in 5G.
+    - How might 5G transform healthcare delivery.
+    - What is augmented reality (AR)?
+    - How does AR differ from virtual reality?
+    - Explain the technology behind AR glasses.
+    - What are the applications of AR in education?
+    - Tell me about AR in retail and e-commerce.
+    - How is AR used in navigation systems?
+    - What are the challenges in developing AR applications?
+    - Explain how AR enhances gaming experiences.
+    - How does AR impact the healthcare industry?
+    - What is the future of AR in workplace training?
+    - Tell me about AR in architecture and interior design.
+    - How does AR work in social media filters?
+    - What are the privacy concerns with AR technology?
+    - Explain the concept of spatial computing in AR.
+    - How might AR transform the tourism industry.
+    - What is quantum computing?
+    - How does quantum computing differ from classical computing?
+    - Explain the concept of quantum bits or qubits.
+    - What are the potential applications of quantum computing?
+    - Tell me about quantum supremacy.
+    - How might quantum computing impact cryptography?
+    - What are the challenges in developing quantum computers?
+    - Explain quantum entanglement and its role in quantum computing.
+    - How could quantum computing revolutionize drug discovery?
+    - What is quantum error correction?
+    - Tell me about major companies working on quantum computing.
+    - How might quantum computing affect financial modeling?
+    - What is the quantum internet?
+    - Explain the concept of quantum annealing.
+    - How could quantum computing impact artificial intelligence.
+    - What is robotics?
+    - How do robots work?
+    - Explain the different types of robots.
+    - What are the applications of robotics in manufacturing?
+    - Tell me about advancements in humanoid robots.
+    - How are robots used in healthcare?
+    - What are the ethical concerns surrounding robotics?
+    - Explain the concept of swarm robotics.
+    - How do robots navigate their environment?
+    - What is soft robotics?
+    - Tell me about the use of AI in robotics.
+    - How are robots impacting the job market?
+    - What is the future of robotics in space exploration?
+    - Explain the concept of collaborative robots or cobots.
+    - How are robots used in agriculture.
+    - What is data science?
+    - How does data science differ from statistics?
+    - Explain the data science lifecycle.
+    - What are the key skills needed for a career in data science?
+    - Tell me about big data analytics.
+    - How is data science used in business decision-making?
+    - What is machine learning in the context of data science?
+    - Explain the importance of data visualization.
+    - How does data science contribute to predictive analytics?
+    - What are common data science tools and technologies?
+    - Tell me about the role of data science in healthcare.
+    - How does data science impact marketing strategies?
+    - What are the ethical considerations in data science?
+    - Explain the concept of data mining.
+    - How is data science used in finance and risk management.
+    - What is a balanced diet?
+    - Explain the importance of macronutrients.
+    - How do vitamins and minerals contribute to health?
+    - What are the benefits of a plant-based diet?
+    - Tell me about the Mediterranean diet.
+    - How does sugar affect the body?
+    - What is the role of fiber in digestion?
+    - Explain the concept of intermittent fasting.
+    - How can I read and understand nutrition labels?
+    - What are superfoods and their benefits?
+    - Tell me about the keto diet.
+    - How does hydration impact overall health?
+    - What are common nutritional deficiencies?
+    - Explain the importance of protein in the diet.
+    - How does nutrition affect mental health.
+    - What are the benefits of regular exercise?
+    - How much exercise do I need per week?
+    - Explain the difference between cardio and strength training.
+    - What is HIIT (High-Intensity Interval Training)?
+    - Tell me about the importance of stretching.
+    - How does exercise impact mental health?
+    - What are the best exercises for weight loss?
+    - Explain the concept of muscle hypertrophy.
+    - How can I start a safe exercise routine?
+    - What is the role of rest and recovery in fitness?
+    - Tell me about popular fitness trends.
+    - How does age affect exercise needs?
+    - What is the importance of proper form in exercising?
+    - Explain the benefits of yoga and pilates.
+    - How does exercise contribute to heart health.
+    - What is mental health?
+    - How can I manage stress effectively?
+    - Explain the symptoms of depression.
+    - What are anxiety disorders?
+    - Tell me about the importance of work-life balance.
+    - How does sleep affect mental health?
+    - What is cognitive behavioral therapy?
+    - Explain the concept of mindfulness meditation.
+    - How can I improve my self-esteem?
+    - What are the signs of burnout?
+    - Tell me about the impact of social media on mental health.
+    - How can I support someone with a mental health condition?
+    - What is the relationship between diet and mental health?
+    - Explain the benefits of therapy and counseling.
+    - How does exercise impact mental well-being.
+    - Why is sleep important for health?
+    - How much sleep do adults need?
+    - Explain the different stages of sleep.
+    - What is sleep hygiene?
+    - Tell me about common sleep disorders.
+    - How does caffeine affect sleep?
+    - What are the effects of sleep deprivation?
+    - Explain the concept of circadian rhythm.
+    - How can I improve my sleep quality?
+    - What is the relationship between sleep and weight?
+    - Tell me about the benefits of power naps.
+    - How does screen time before bed affect sleep?
+    - What is sleep apnea and its health risks?
+    - Explain the impact of shift work on sleep patterns.
+    - How does aging affect sleep needs.
+    - What are common chronic diseases?
+    - How can I prevent heart disease?
+    - Explain the different types of diabetes.
+    - What are the risk factors for cancer?
+    - Tell me about managing high blood pressure.
+    - How does obesity impact overall health?
+    - What is arthritis and how is it treated?
+    - Explain the symptoms of asthma.
+    - How can I reduce my risk of stroke?
+    - What is the impact of chronic diseases on quality of life?
+    - How do I create a personal budget?
+    - What is the importance of an emergency fund?
+    - Explain the 50/30/20 budgeting rule.
+    - How can I improve my credit score?
+    - Tell me about strategies for paying off debt.
+    - What are the best ways to save money?
+    - How do I start investing with little money?
+    - Explain the difference between wants and needs in budgeting.
+    - What is the importance of tracking expenses?
+    - How can I negotiate a higher salary?
+    - Tell me about the benefits of automating savings.
+    - What are some common financial mistakes to avoid?
+    - How do I create a retirement savings plan?
+    - Explain the concept of living below your means.
+    - What are some effective ways to reduce monthly expenses?
+    - What is the stock market and how does it work?
+    - How do I start investing in stocks?
+    - Explain the difference between stocks and bonds.
+    - What are mutual funds?
+    - Tell me about index funds and ETFs.
+    - How does compound interest work?
+    - What is diversification in investing?
+    - Explain the concept of risk tolerance in investing.
+    - How do dividends work?
+    - What is dollar-cost averaging?
+    - Tell me about value investing vs. growth investing.
+    - How do I research and evaluate stocks?
+    - What are the pros and cons of day trading?
+    - Explain the importance of long-term investing.
+    - How do geopolitical events affect the stock market?
+    - What is a 401(k) plan?
+    - How much should I save for retirement?
+    - Explain the differences between traditional and Roth IRAs.
+    - What is the 4% rule in retirement planning?
+    - Tell me about pension plans.
+    - How does Social Security work?
+    - What are annuities and how do they work?
+    - Explain the concept of early retirement.
+    - How can I catch up on retirement savings if I started late?
+    - What is a target-date fund?
+    - Tell me about required minimum distributions (RMDs).
+    - How does inflation impact retirement savings?
+    - What are some tax-efficient retirement withdrawal strategies?
+    - Explain the benefits of employer matching in retirement accounts.
+    - How do I plan for healthcare costs in retirement?
+    - How do income tax brackets work?
+    - What are common tax deductions?
+    - Explain the difference between tax credits and tax deductions.
+    - How do I file my taxes?
+    - Tell me about capital gains tax.
+    - What is the alternative minimum tax (AMT)?
+    - How do payroll taxes work?
+    - Explain the concept of tax-loss harvesting.
+    - What are the tax implications of selling a home?
+    - How do I calculate my effective tax rate?
+    - Tell me about the earned income tax credit (EITC).
+    - What are the tax benefits of charitable donations?
+    - How do taxes work for self-employed individuals?
+    - Explain the importance of keeping tax records.
+    - What are some common tax mistakes to avoid?
+    - What factors should I consider when buying a home?
+    - How does a mortgage work?
+    - Explain the process of getting pre-approved for a mortgage.
+    - What is the difference between a fixed-rate and adjustable-rate mortgage?
+    - Tell me about the costs associated with buying a home.
+    - How does real estate appreciation work?
+    - What is a home equity line of credit (HELOC)?
+    - Explain the concept of real estate investment trusts (REITs).
+    - How do property taxes work?
+    - What is the importance of a home inspection?
+    - Tell me about the pros and cons of renting vs. buying.
+    - How does refinancing a mortgage work?
+    - What are some strategies for investing in rental properties?
+    - Explain the role of a real estate agent.
+    - How do I determine if I'm ready to buy a home?
+    - What types of insurance do I need?
+    - How does life insurance work?
+    - Explain the difference between term and whole life insurance.
+    - What is covered by homeowners insurance?
+    - Tell me about auto insurance coverage options.
+    - How does health insurance work?
+    - What is disability insurance?
+    - Explain the concept of insurance premiums and deductibles.
+    - How do I choose the right insurance policy?
+    - What is umbrella insurance?
+    - Tell me about long-term care insurance.
+    - How does travel insurance work?
+    - What are some common insurance mistakes to avoid?
+    - Explain the importance of reviewing insurance policies regularly.
+    - How do insurance claims work?
+    - What is a credit score and how is it calculated?
+    - How do I read my credit report?
+    - Explain the difference between good debt and bad debt.
+    - What are the best strategies for paying off credit card debt?
+    - Tell me about debt consolidation.
+    - How do student loans work?
+    - What is the debt snowball method?
+    - Explain the impact of late payments on credit scores.
+    - How can I dispute errors on my credit report?
+    - What is a debt-to-income ratio?
+    - Tell me about the pros and cons of balance transfer credit cards.
+    - How does bankruptcy affect credit?
+    - What are some alternatives to payday loans?
+    - Explain the concept of credit utilization.
+    - How can I build credit from scratch?
+    - What is the difference between a checking and savings account?
+    - How do online banks work?
+    - Explain the concept of overdraft protection.
+    - What are the benefits of having multiple bank accounts?
+    - Tell me about high-yield savings accounts.
+    - How do certificates of deposit (CDs) work?
+    - What is mobile banking and is it safe?
+    - Explain the process of wire transfers.
+    - How do I choose the right bank for my needs?
+    - What is FDIC insurance?
+    - Tell me about the pros and cons of credit unions vs. banks.
+    - How do international bank transfers work?
+    - What are some common banking fees to watch out for?
+    - Explain the concept of fractional reserve banking.
+    - How do I set up direct deposit?
+    - How do I start a small business?
+    - What is a business plan and why is it important?
+    - Explain the different types of business structures.
+    - How do I secure funding for my startup?
+    - Tell me about the pros and cons of franchising.
+    - What are some common challenges faced by entrepreneurs?
+    - How do I price my products or services?
+    - Explain the concept of scalability in business.
+    - What is the importance of market research?
+    - How do I create a marketing strategy for my business?
+    - Tell me about the role of networking in entrepreneurship.
+    - What are some tax considerations for small business owners?
+    - How do I hire and manage employees?
+    - Explain the importance of cash flow management.
+    - What are some strategies for growing a small business?
+    - What is inflation and how does it affect the economy?
+    - How does supply and demand work?
+    - Explain the concept of gross domestic product (GDP).
+    - What is a recession and what causes it?
+    - Tell me about the Federal Reserve and its role.
+    - How do interest rates affect the economy?
+    - What is fiscal policy?
+    - Explain the concept of economic indicators.
+    - How does international trade impact domestic economies?
+    - What is the difference between microeconomics and macroeconomics?
+    - Tell me about the circular flow of income.
+    - How do exchange rates work?
+    - What is the labor market and how does it function?
+    - Explain the concept of economic bubbles.
+    - How do tariffs and trade barriers affect economies?
+    - How do I plan a budget-friendly trip?
+    - What are essential items to pack for international travel?
+    - Explain how to find the best flight deals.
+    - What should I consider when choosing accommodations?
+    - Tell me about popular travel reward programs.
+    - How far in advance should I book my trip?
+    - What are some tips for creating a travel itinerary?
+    - Explain the benefits of travel insurance.
+    - How can I save money on transportation while traveling?
+    - What are some strategies for dealing with jet lag?
+    - Tell me about the best times to visit popular destinations.
+    - How do I choose the right travel destination for me?
+    - What are some common travel scams to avoid?
+    - Explain the process of applying for a passport.
+    - How can I stay connected while traveling internationally?
+    - What are unique cultural experiences in Japan?
+    - How can I respectfully participate in local customs while traveling?
+    - Explain the concept of sustainable tourism.
+    - What are some off-the-beaten-path destinations in Europe?
+    - Tell me about food tourism and culinary travel experiences.
+    - How can I learn about a country's history while visiting?
+    - What are some ways to immerse myself in local culture?
+    - Explain the importance of learning basic phrases in the local language.
+    - How can I support local communities while traveling?
+    - What are some etiquette tips for visiting religious sites?
+    - Tell me about traditional festivals around the world.
+    - How can I experience authentic local music and dance?
+    - What are some unique accommodation options for cultural immersion?
+    - Explain the concept of homestays and their cultural benefits.
+    - How can I respectfully photograph people and places while traveling?
+    - What are popular adventure travel destinations?
+    - How do I prepare for a hiking trip?
+    - Explain the different types of adventure travel.
+    - What equipment do I need for a camping trip?
+    - Tell me about popular water sports for travelers.
+    - How can I stay safe while engaging in adventure activities?
+    - What are some beginner-friendly adventure travel options?
+    - Explain the appeal of wildlife safaris.
+    - How do I choose the right adventure tour operator?
+    - What are some extreme sports destinations around the world?
+    - Tell me about the best places for mountain climbing.
+    - How can I prepare physically for adventure travel?
+    - What are some unique adventure experiences in South America?
+    - Explain the concept of ecotourism.
+    - How can I combine adventure and cultural experiences in my travels?
+    - What are the world's best beach destinations?
+    - How do I choose the right beach resort?
+    - Explain the difference between public and private beaches.
+    - What should I pack for a beach vacation?
+    - Tell me about popular beach activities and water sports.
+    - How can I protect myself from the sun at the beach?
+    - What are some secluded beach destinations?
+    - Explain the concept of blue flag beaches.
+    - How can I find affordable beachfront accommodations?
+    - What are some family-friendly beach destinations?
+    - Tell me about the best beaches for surfing.
+    - How can I contribute to beach conservation while traveling?
+    - What are some unique beaches around the world?
+    - Explain the importance of understanding beach safety flags.
+    - How do tides work and why are they important for beachgoers?
+    - What are popular cities for weekend getaways?
+    - How can I make the most of a short city break?
+    - Explain the benefits of city passes for tourists.
+    - What are must-visit attractions in New York City?
+    - Tell me about the best ways to explore European cities.
+    - How can I find unique local experiences in big cities?
+    - What are some budget-friendly activities in major cities?
+    - Explain how to use public transportation in unfamiliar cities.
+    - How can I avoid tourist traps in popular city destinations?
+    - What are some underrated cities for tourism?
+    - Tell me about the best cities for art and culture enthusiasts.
+    - How can I experience the nightlife in foreign cities safely?
+    - What are some tips for finding good restaurants in new cities?
+    - Explain the concept of free walking tours in cities.
+    - How can I combine multiple city visits in one trip efficiently?
+    - What are some iconic road trip routes?
+    - How do I plan a successful road trip?
+    - Explain the essentials to pack for a road trip.
+    - What should I check on my car before a long road trip?
+    - Tell me about apps that are useful for road trips.
+    - How can I find unique stops and attractions along my route?
+    - What are some tips for staying alert during long drives?
+    - Explain how to estimate fuel costs for a road trip.
+    - How can I find good, affordable accommodations on a road trip?
+    - What are some scenic drives in North America?
+    - Tell me about international road trip opportunities.
+    - How can I incorporate camping into my road trip?
+    - What are some safety tips for road trips?
+    - Explain how to create a flexible road trip itinerary.
+    - How can I make my road trip more environmentally friendly?
+    - What are family-friendly vacation destinations?
+    - How can I keep kids entertained during long flights?
+    - Explain the benefits of all-inclusive resorts for families.
+    - What should I pack when traveling with young children?
+    - Tell me about educational travel experiences for kids.
+    - How can I save money on family vacations?
+    - What are some tips for road trips with children?
+    - Explain how to choose family-friendly accommodations.
+    - How can I ensure my family's safety while traveling abroad?
+    - What are some adventure travel options suitable for families?
+    - Tell me about the best theme parks for family vacations.
+    - How can I help my children adjust to different time zones?
+    - What are some cultural experiences that kids will enjoy?
+    - Explain the benefits of multigenerational travel.
+    - How can I balance adult and child interests on a family trip?
+    - What are the best destinations for solo travelers?
+    - How can I stay safe while traveling alone?
+    - Explain the benefits of solo travel.
+    - What are some tips for meeting people while traveling solo?
+    - Tell me about group tours for solo travelers.
+    - How can I save money as a solo traveler?
+    - What are some common concerns about solo travel and how to address them?
+    - Explain how to plan a solo trip.
+    - How can I enjoy dining out alone while traveling?
+    - What are some empowering solo travel experiences?
+    - Tell me about solo female travel safety tips.
+    - How can I overcome loneliness while traveling alone?
+    - What are some destinations known for being welcoming to solo travelers?
+    - Explain the concept of solo travel retreats.
+    - How can I build confidence as a solo traveler?
+    - What defines luxury travel?
+    - How can I find exclusive travel experiences?
+    - Explain the appeal of luxury cruise lines.
+    - What are some of the world's most luxurious hotels?
+    - Tell me about private island resorts.
+    - How can I get upgrades and VIP treatment while traveling?
+    - What are some unique luxury travel destinations?
+    - Explain the concept of luxury train journeys.
+    - How can I plan a luxury safari experience?
+    - What are some top fine dining destinations around the world?
+    - Tell me about luxury wellness retreats.
+    - How can I charter a private jet for travel?
+    - What are some exclusive shopping destinations for luxury travelers?
+    - Explain the appeal of luxury villa rentals.
+    - How can I plan a luxurious honeymoon?
+    - What are popular backpacking destinations?
+    - How do I choose the right backpack for travel?
+    - Explain how to plan a backpacking trip on a budget.
+    - What essential items should I pack for backpacking?
+    - Tell me about hostel etiquette and tips.
+    - How can I stay safe while backpacking solo?
+    - What are some ways to meet other travelers while backpacking?
+    - Explain the benefits of slow travel for backpackers.
+    - How can I find work while backpacking long-term?
+    - What are some common backpacker routes in Southeast Asia?
+    - Tell me about backpacking in Europe on a rail pass.
+    - How can I maintain personal hygiene while backpacking?
+    - What are some tips for backpacking in developing countries?
+    - Explain how to handle money and valuables while backpacking.
+    - How can I reduce my environmental impact as a backpacker?
+    - What are the top-rated movies of all time?
+    - How do I choose a good movie to watch?
+    - Explain the different genres of movies.
+    - What are some classic films everyone should watch?
+    - Tell me about the history of cinema.
+    - How are special effects created in movies?
+    - What is the difference between director's cut and theatrical release?
+    - Explain the concept of method acting.
+    - How do film festivals work?
+    - What are some influential foreign films?
+    - Tell me about the process of making an animated movie.
+    - How can I find independent films to watch?
+    - What are some must-see movies based on true stories?
+    - Explain the role of a cinematographer in filmmaking.
+    - How do streaming services impact the film industry?
+    - What are the most popular TV series of all time?
+    - How do I decide what series to binge-watch?
+    - Explain the difference between limited series and ongoing series.
+    - What are some critically acclaimed series of the last decade?
+    - Tell me about the impact of streaming platforms on TV series.
+    - How are series typically produced and developed?
+    - What are some unique concepts in modern television series?
+    - Explain the concept of a showrunner in TV production.
+    - How do series ratings and reviews affect their success?
+    - What are some cult classic series worth watching?
+    - Tell me about the evolution of serialized storytelling.
+    - How can I find international series to watch?
+    - What are the most anticipated upcoming series?
+    - Explain the significance of season finales and cliffhangers.
+    - How do spin-off series work?
+    - What are the main genres of movies?
+    - Explain the concept of genre-blending in film.
+    - How do genres influence audience expectations?
+    - What are some popular sub-genres of horror films?
+    - Tell me about the characteristics of romantic comedies.
+    - How do genres evolve over time?
+    - What is the impact of genre on storytelling?
+    - Explain the difference between drama and comedy genres.
+    - What are the defining traits of science fiction films?
+    - Tell me about the role of genre in film marketing.
+    - How can I analyze movies based on their genre?
+    - What are some examples of genre-defying films?
+    - Explain how genre conventions can be subverted.
+    - How do genres differ between international cinema?
+    - What are the most popular genres in streaming today?
+    - What is the theory of relativity?
+    - Explain the concept of gravity.
+    - How do black holes work?
+    - What are the fundamental forces of nature?
+    - Tell me about quantum mechanics.
+    - How does light behave as both a particle and a wave?
+    - What is the Higgs boson?
+    - Explain the laws of thermodynamics.
+    - How do magnets work?
+    - What is string theory?
+    - Tell me about the structure of atoms.
+    - How does nuclear fission differ from fusion?
+    - What is dark matter and dark energy?
+    - Explain the concept of entropy.
+    - How do particle accelerators work?
+    - What is the periodic table of elements?
+    - Explain the difference between acids and bases.
+    - How do chemical bonds form?
+    - What is the structure of a water molecule?
+    - Tell me about the chemistry of cooking.
+    - How do batteries work?
+    - What is the difference between organic and inorganic chemistry?
+    - Explain the process of electrolysis.
+    - How do catalysts work?
+    - What are isotopes?
+    - Tell me about the chemistry of climate change.
+    - How do soap and detergents clean?
+    - What is the significance of pH in chemistry?
+    - Explain the concept of molecular geometry.
+    - How do radioactive elements decay?
+    - What is the theory of evolution?
+    - Explain how DNA replication works.
+    - How do cells divide?
+    - What is photosynthesis?
+    - Tell me about the human immune system.
+    - How do vaccines work?
+    - What is the difference between prokaryotic and eukaryotic cells?
+    - Explain the process of genetic engineering.
+    - How does the nervous system function?
+    - What is biodiversity?
+    - Tell me about the biology of aging.
+    - How do hormones regulate bodily functions?
+    - What is the importance of microorganisms in ecosystems?
+    - Explain the concept of epigenetics.
+    - How do antibiotics work?
+    - What is the Big Bang theory?
+    - Explain the life cycle of stars.
+    - How do planets form?
+    - What are galaxies made of?
+    - Tell me about the search for exoplanets.
+    - How do telescopes work?
+    - What is the difference between a meteor, meteorite, and asteroid?
+    - Explain the concept of light years.
+    - How do black holes affect space and time?
+    - What are nebulae?
+    - Tell me about the possibility of life on other planets.
+    - How do we measure distances in space?
+    - What is dark matter and its role in the universe?
+    - Explain the concept of red shift in astronomy.
+    - How do solar and lunar eclipses occur?
+    - What causes earthquakes?
+    - Explain the water cycle.
+    - How do volcanoes form and erupt?
+    - What are tectonic plates?
+    - Tell me about climate change and its effects.
+    - How do hurricanes and tornadoes form?
+    - What is the structure of the Earth's layers?
+    - Explain the process of rock formation.
+    - How do ocean currents work?
+    - What causes the seasons?
+    - Tell me about the Earth's magnetic field.
+    - How do fossils form?
+    - What is the importance of the ozone layer?
+    - Explain the concept of carbon dating.
+    - How do glaciers shape the land?
+    - What is biodiversity and why is it important?
+    - Explain the concept of ecosystem services.
+    - How does deforestation impact the environment?
+    - What are renewable energy sources?
+    - Tell me about the effects of plastic pollution.
+    - How does air pollution affect human health?
+    - What is the greenhouse effect?
+    - Explain the process of water treatment.
+    - How do we measure and monitor air quality?
+    - What is sustainable agriculture?
+    - Tell me about the importance of wetlands.
+    - How does urbanization affect the environment?
+    - What are invasive species and their impact?
+    - Explain the concept of carbon sequestration.
+    - How can individuals reduce their environmental impact?
+    - How does the human brain work?
+    - Explain the concept of neuroplasticity.
+    - What are neurotransmitters and their functions?
+    - How does memory formation occur in the brain?
+    - Tell me about the effects of sleep on brain function.
+    - How do we study the brain?
+    - What is the difference between the left and right brain hemispheres?
+    - Explain the process of neurogenesis.
+    - How does the brain process emotions?
+    - What are the major parts of the nervous system?
+    - Tell me about the neuroscience of addiction.
+    - How does the brain develop from infancy to adulthood?
+    - What is consciousness from a neuroscience perspective?
+    - Explain the concept of neural networks.
+    - How do neurodegenerative diseases affect the brain?
+    - What is DNA and how does it work?
+    - Explain the process of genetic inheritance.
+    - How do genes determine traits?
+    - What are chromosomes?
+    - Tell me about genetic mutations.
+    - How does genetic testing work?
+    - What is the difference between genotype and phenotype?
+    - Explain the concept of gene expression.
+    - How do we sequence genomes?
+    - What is genetic engineering?
+    - Tell me about the role of genetics in evolution.
+    - How do identical and fraternal twins differ genetically?
+    - What are genetic disorders?
+    - Explain the concept of genetic diversity.
+    - How does epigenetics influence gene expression?
+    - What are the properties of different materials?
+    - Explain the structure of crystalline materials.
+    - How are new materials developed?
+    - What are nanomaterials?
+    - Tell me about the strength and durability of materials.
+    - How do semiconductors work?
+    - What is the difference between metals, ceramics, and polymers?
+    - Explain the concept of material fatigue.
+    - How do we test and characterize materials?
+    - What are composite materials?
+    - Tell me about smart materials and their applications.
+    - How do materials behave under extreme conditions?
+    - What is biomaterials engineering?
+    - Explain the concept of materials recycling.
+    - How do materials impact energy efficiency?
+    - What are the rules of soccer?
+    - Tell me about the history of baseball.
+    - How does the scoring system in tennis work?
+    - Explain the different positions in basketball.
+    - What are the most popular sports in the world?
+    - Tell me about the Olympics.
+    - How do I improve my golf swing?
+    - What is the offside rule in football?
+    - Explain the different martial arts.
+    - How does the Tour de France work?
+    - Tell me about famous athletes in history.
+    - What are the basics of swimming techniques?
+    - How does the NFL draft work?
+    - Explain the concept of sports psychology.
+    - What are the most common sports injuries?
+    - Tell me about extreme sports.
+    - How do I train for a marathon?
+    - What is the difference between amateur and professional sports?
+    - Explain the role of sports in society.
+    - How do sports betting odds work?
+    - What are some easy recipes for beginners?
+    - Tell me about different cooking methods.
+    - How do I make a perfect omelet?
+    - Explain the basics of baking.
+    - What are the essential kitchen tools?
+    - Tell me about different types of cuisine.
+    - How do I properly store fresh produce?
+    - What are some healthy meal prep ideas?
+    - Explain the concept of farm-to-table.
+    - How do I pair wine with food?
+    - Tell me about vegetarian and vegan diets.
+    - What are some common cooking mistakes to avoid?
+    - How do I read and understand food labels?
+    - Explain the difference between baking soda and baking powder.
+    - What are some tips for cooking on a budget?
+    - Tell me about food safety practices.
+    - How do I plan a weekly meal menu?
+    - What are some quick and easy breakfast ideas?
+    - Explain the benefits of slow cooking.
+    - How do I make my own bread?
+    - What were the major causes of World War II?
+    - Tell me about ancient Egyptian civilization.
+    - How did the Industrial Revolution change society?
+    - Explain the significance of the French Revolution.
+    - What was life like in medieval Europe?
+    - Tell me about the rise and fall of the Roman Empire.
+    - How did the American Civil War impact the United States?
+    - What were the key events of the Cold War?
+    - Explain the impact of the Renaissance on art and culture.
+    - How did the invention of the printing press change the world?
+    - Tell me about important women in history.
+    - What were the major achievements of ancient Greek civilization?
+    - How did colonialism shape the modern world?
+    - Explain the significance of the Magna Carta.
+    - What were the causes and effects of the Great Depression?
+    - Tell me about the history of human rights.
+    - How did the Space Race influence technological development?
+    - What were the major turning points in World War I?
+    - Explain the impact of the Black Death on medieval society.
+    - How has globalization affected world history?
+    - What are the most popular TV shows right now?
+      
+
+
+- intent: interpret_emotion
+  examples: |
+    - I am feeling sad
+    - I am happy today
+    - I feel angry
+    - I am frustrated
+    - I am excited
+    - I feel overwhelmed
+    - I am feeling anxious
+    - I feel great
+    - I am feeling hopeful
+    - I am feeling relaxed
+    - I feel guilty
+    - I am feeling grateful
+    - I feel loved
+    - I am feeling lonely
+    - I feel confused
+    - I am feeling proud
+    - I feel bored
+    - I am feeling indifferent
+    - I feel energized
+    - I am feeling content
+    - I feel like crying
+    - I am feeling motivated
+    - I feel disappointed
+    - I am feeling stressed
+    - I feel rejuvenated
+    - I am feeling curious
+    - I feel betrayed
+    - I am feeling overwhelmed with joy
+    - I feel like I'm on top of the world
+    - I am feeling unappreciated
+    - I feel nostalgic
+    - I am feeling irritated
+    - I feel frustrated with everything
+    - I am feeling lighthearted
+    - I feel defeated
+    - I am feeling strong
+    - I feel alive
+    - I am feeling cherished
+    - I feel neglected
+    - I am feeling misunderstood
+    - I feel a sense of belonging
+    - I am feeling insecure
+    - I feel like I need a change
+    - I am feeling adventurous
+    - I feel a little lost
+    - I am feeling hopeful for the future
+    - I feel at peace
+    - I am feeling passionate
+    - I feel like giving up
+    - I am feeling a mix of emotions
+    - I feel inspired
+    - I am feeling like I'm in a rut
+    - I am feeling overwhelmed with stress
+    - I am feeling overwhelmed with stress
+    - I am feeling joyous
+    - I feel anxious about the future
+    - I feel heartbroken
+    - I am feeling motivated to change
+    - I feel optimistic today
+    - I am feeling rejected
+    - I feel like dancing
+    - I am feeling nostalgic about my childhood
+    - I feel incredibly proud of myself
+    - I am feeling restless
+    - I feel a deep sense of loss
+    - I am feeling creative
+    - I feel terrified
+    - I am feeling foolish
+    - I feel frustrated with my progress
+    - I am feeling strong in my beliefs
+    - I feel ecstatic
+    - I am feeling disconnected
+    - I feel like I can conquer the world
+    - I am feeling a little hopeless
+    - I feel secure in my relationships
+    - I am feeling pressure to succeed
+    - I feel invigorated
+    - I am feeling bittersweet
+    - I feel like a failure
+    - I am feeling balanced
+    - I feel trapped
+    - I am feeling refreshed
+    - I feel like I'm missing out
+    - I am feeling guilty about my choices
+    - I feel incredibly lucky
+    - I am feeling isolated
+    - I feel a sense of purpose
+    - I am feeling worried about my health
+    - I feel unworthy
+    - I am feeling brave
+    - I feel indifferent about everything
+    - I am feeling light as a feather
+    - I feel empowered
+    - I am feeling withdrawn
+    - I feel like a burden
+    - I am feeling fulfilled
+    - I feel uninspired
+    - I am feeling compassionate
+    - I feel like I need to escape
+    - I am feeling courageous
+    - I feel anxious about social situations
+    - I am feeling relaxed and at ease
+    - I feel like I need support
+    - I am feeling contemplative
+    - I feel like I belong
+    - I am feeling hopeful despite challenges
+    - I feel regretful
+    - I am feeling alive with possibilities
+    - I feel unmotivated
+    - I am feeling ecstatic about my achievements
+    - I feel like I have too much on my plate
+    - I am feeling understanding
+    - I feel threatened
+    - I am feeling peaceful
+    - I feel like I’ve lost my way
+    - I am feeling patient
+    - I feel fragile
+    - I am feeling ambitious
+    - I feel like I’m in a dream
+    - I am feeling exposed
+    - I feel invigorated by change
+    - I am feeling disillusioned
+    - I feel like I need closure
+    - I am feeling playful
+    - I feel a weight lifted off my shoulders
+    - I am feeling emboldened
+    - I feel hopeless in this situation
+    - I am feeling trapped in my thoughts
+    - I feel like I need to recharge
+    - I am feeling cynical
+    - I feel a sense of urgency
+    - I am feeling overly sensitive
+    - I feel connected to others
+    - I am feeling grateful for my support system
+    - I feel caught in a dilemma
+    - I am feeling optimistic about my future
+    - I feel fragile emotionally
+    - I am feeling vindicated
+    - I feel proud of my growth
+    - I am feeling inquisitive
+    - I feel a sense of relief
+    - I am feeling stubborn
+    - I feel liberated
+    - I am feeling apathetic
+    - I feel like I'm at a crossroads
+    - I am feeling productive
+    - I feel confused about my choices
+    - I am feeling honored
+    - I feel overwhelmed with gratitude
+    - I am feeling disheartened
+    - I feel like I need to talk to someone
+    - I am feeling fierce
+    - I feel joyful in my accomplishments
+    - I am feeling resentful
+    - I feel tranquil
+    - I am feeling unsettled
+    - I feel blessed
+    - I am feeling motivated by others
+    - I feel lost in my emotions
+    - I am feeling daring
+    - I feel overwhelmed by expectations
+    - I am feeling exhausted
+    - I feel a deep sense of peace
+    - I am feeling compassionate towards others
+    - I feel torn between choices
+    - I am feeling charmed
+    - I feel like I'm in over my head
+    - I am feeling reassured
+    - I feel threatened by change
+    - I am feeling misunderstood
+    - I feel hyper-aware of my surroundings
+    - I am feeling adventurous in life
+    - I feel like I'm standing still
+    - I am feeling a strong urge to create
+    - I feel apprehensive about tomorrow
+    - I am feeling restored
+    - I feel competitive
+    - I am feeling jaded
+    - I feel like I’m losing my touch
+    - I am feeling cherished by friends
+    - I feel like I’m on the right path
+    - I am feeling uneasy about my decision
+    - I feel thankful for small moments
+    - I am feeling like I want to explore
+    - I feel pensive
+    - I am feeling satisfied with my choices
+    - I feel like I’m drowning in work
+    - I am feeling compelled to help others
+    - I feel inspired by nature
+    - I am feeling on edge
+    - I feel a strong sense of loyalty
+    - I am feeling like I need to break free
+    - I feel isolated in my thoughts
+    - I am feeling powerful
+    - I feel somewhat detached
+    - I am feeling like I’m finding my way
+    - I feel an urge to connect with family
+    - I am feeling naïve
+    - I feel a sense of wonder
+    - I am feeling burdened by my thoughts
+    - I feel like a dreamer
+    - I am feeling cautious about the future
+    - I feel fueled by passion
+    - I am feeling like I need to express myself
+    - I feel fulfilled in my role
+    - I am feeling like I’m being judged
+    - I feel grounded
+    - I am feeling reflective
+    - I feel like I’m thriving
+    - I am feeling exhausted by stress
+    - I feel a rush of excitement
+    - I am feeling out of place
+    - I feel relief after a long day
+    - I am feeling in tune with my emotions
+    - I feel neglected by friends
+    - I am feeling eager to learn
+    - I feel vulnerable
+    - I am feeling a sense of adventure
+    - I feel like I need clarity
+    - I am feeling overwhelmed by change
+    - I feel supported
+    - I am feeling like I’m not enough
+    - I feel rejuvenated by nature
+    - I am feeling relieved to share my thoughts
+    - I feel skeptical
+    - I am feeling challenged
+    - I feel like I’m making progress
+    - I am feeling alarmed
+    - I feel secure in my relationships
+    - I am feeling deeply satisfied
+    - I feel like I need to take a break
+    - I am feeling shaken
+    - I feel a mix of happiness and sadness
+    - I am feeling proud of my accomplishments
+    - I feel like I’m stuck in a loop
+    - I am feeling genuinely happy
+    - I feel a sense of belonging in my community
+    - I am feeling frustrated with the system
+    - I feel ready to embrace change
+    - I am feeling judgmental
+    - I feel relieved to have someone to talk to
+    - I am feeling alarmingly anxious
+    - I feel unsettled by current events
+    - I am feeling connected to my purpose
+    - I feel unsure of myself
+    - I am feeling blessed by good fortune
+    - I feel open to new experiences
+    - I am feeling captivated by my surroundings
+    - I feel inclined to help others
+    - I am feeling reassured by my friends
+    - I feel drained by negativity
+    - I am feeling deeply introspective
+    - I feel at peace with my decisions
+    - I am feeling like I need to vent
+    - I feel ambitious about my career
+    - I am feeling distracted
+    - I feel the urge to change my routine
+    - I am feeling fulfilled in my career
+    - I feel driven
+    - I am feeling confused about my feelings
+    - I feel afraid to express my emotions
+    - I am feeling protected
+    - I feel an overwhelming sense of joy
+    - I am feeling a little down today
+    - I feel unsure about my future
+    - I am feeling passionately about my beliefs
+    - I feel lost in thought
+    - I am feeling hesitant
+    - I feel taken for granted
+    - I am feeling generous
+    - I feel engulfed by my thoughts
+    - I am feeling enchanted by the moment
+    - I feel joyful about the little things
+    - I am feeling like I can’t keep up
+    - I feel cherished by my family
+    - I am feeling like I want to give back
+    - I feel awed by nature’s beauty
+    - I am feeling impacted by others’ emotions
+    - I feel a sense of anticipation
+    - I am feeling empowered to take risks
+    - I feel like I need to learn to say no
+    - I am feeling fresh with ideas
+    - I feel worn out
+    - I am feeling like I want to change the world
+    - I feel eager to achieve my goals
+    - I am feeling sad about lost opportunities
+    - I feel a mix of emotions
+    - I am feeling captivated by a story
+    - I feel like I’m walking on air
+    - I am feeling spiritually connected
+    - I feel affected by others’ judgments
+    - I am feeling renewed
+    - I feel hopeful about new beginnings
+    - I am feeling like I’m a part of something bigger
+    - I feel inspired to take action
+    - I am feeling relieved to have support
+    - I feel like I’ve found my passion
+    - I am feeling guilty for my feelings
+    - I feel touched by kindness
+    - I am feeling frantic
+    - I feel the weight of the world on my shoulders
+    - I am feeling fulfilled by helping others
+    - I feel grateful for today
+    - I am feeling like I’m in a rut
+    - I feel burdened by responsibility
+    - I am feeling like I can’t make decisions
+    - I feel a strong urge to connect
+    - I am feeling somewhat unfulfilled
+    - I feel like I’m discovering myself
+    - I am feeling pressured to conform
+    - I feel like I’m floating on air
+    - I am feeling lost in translation
+    - I feel overwhelmed with tasks
+    - I am feeling indifferent to what’s happening
+    - I feel a sense of adventure
+    - I am feeling downcast
+    - I feel strong in my convictions
+    - I am feeling like I want to cry
+    - I feel resilient despite setbacks
+    - I am feeling connected to my roots
+    - I feel like I’m losing my sense of self
+    - I am feeling alive with excitement
+    - I feel hopeful in the face of adversity
+    - I am feeling burdened by expectations
+    - I feel like I’m in my element
+    - I am feeling isolated from others
+    - I feel a strong sense of belonging
+    - I am feeling excited about possibilities
+    - I feel appreciated for my efforts
+    - I am feeling confident in my abilities
+    - I feel the need for change
+    - I am feeling reflective about my choices
+    - I feel vulnerable sharing my emotions
+    - I am feeling increasingly aware of my surroundings
+    - I feel drawn to creativity
+    - I am feeling like I can’t catch a break
+    - I feel secure in my identity
+    - I am feeling challenged in a good way
+    - I feel supported by my community
+    - I am feeling the need to express gratitude
+    - I feel like I’m finding my way back
+    - I am feeling overwhelmed by my feelings
+    - I feel courageous in my pursuits
+    - I am feeling weighed down by obligations
+    - I feel alive in the moment
+    - I am feeling triggered by memories
+    - I feel a sense of clarity
+    - I am feeling resilient after challenges
+    - I feel the urge to express myself
+    - I am feeling nostalgic
+    - I feel an inner strength
+    - I am feeling perplexed
+    - I feel like I’m surrounded by love
+    - I am feeling hesitant to open up
+    - I feel cherished
+    - I am feeling a strong need for connection
+    - I feel an urge to take action
+    - I am feeling trapped in my situation
+    - I feel inspired by others’ success
+    - I am feeling a sense of responsibility
+    - I feel brave in facing my fears
+    - I am feeling deeply reflective
+    - I feel touched by acts of kindness
+    - I am feeling alarmed by recent events
+    - I feel like I need to reach out
+    - I am feeling lighter
+    - I feel connected to my emotions
+    - I am feeling energized
+    - I feel overwhelmed by my surroundings
+    - I am feeling comfortable with who I am
+    - I feel hopeful for the future
+    - I am feeling angry about injustices
+    - I feel happy to be alive
+    - I am feeling disheartened by setbacks
+    - I feel in tune with my feelings
+    - I am feeling unsure about my place
+    - I feel inspired to pursue my dreams
+    - I am feeling encouraged by my friends
+    - I feel like I can make a difference
+    - I am feeling proud of my roots
+    - I feel appreciated for my contributions
+    - I am feeling guilty for my choices
+    - I feel a sense of belonging in my circle
+    - I am feeling motivated to improve
+    - I feel confused by my thoughts
+    - I am feeling brave in the face of challenges
+    - I feel optimistic about opportunities
+    - I am feeling hopeful amidst uncertainty
+    - I feel the desire to grow
+    - I am feeling refreshed by new perspectives
+    - I feel understood by others
+    - I am feeling like I want to explore
+    - I feel motivated to help others
+    - I am feeling anxious about the unknown
+    - I feel like I’m in a fog
+    - I am feeling blessed by my experiences
+    - I feel a sense of urgency to act
+    - I am feeling uncertain about my decisions
+    - I feel energized by my passions
+    - I am feeling grateful for my journey
+    - I feel a strong connection to my goals
+    - I am feeling like I need to recharge
+    - I feel overwhelmed by emotions
+    - I am feeling ready to tackle challenges
+    - I feel inspired by the people around me
+    - I am feeling trapped in my own mind
+    - I feel like I’m evolving
+    - I am feeling positive about my growth
+    - I feel connected to my purpose
+    - I am feeling the weight of expectations
+    - I feel curious about the world
+    - I am feeling ambitious about my plans
+    - I feel at peace with my decisions
+    - I am feeling challenged to grow
+    - I feel fulfilled by my relationships
+    - I am feeling introspective today
+    - I feel an urge to express myself creatively
+    - I am feeling supported by my friends
+    - I feel anxious about my future
+    - I am feeling encouraged by my achievements
+    - I feel like I can overcome obstacles
+    - I am feeling honored to share my story
+    - I feel vulnerable sharing my truth
+    - I am feeling grateful for second chances
+    - I feel inspired by my surroundings
+    - I am feeling unsettled by recent events
+    - I feel like I can’t trust my instincts
+    - I am feeling burdened by my responsibilities
+    - I feel overwhelmed by the world
+    - I am feeling safe in my space
+    - I feel a strong desire to connect
+    - I am feeling grateful for my support
+    - I feel joyful in my journey
+    - I am feeling heavy-hearted
+    - I feel motivated to make a difference
+    - I am feeling concerned about my well-being
+    - I feel like I’m on a rollercoaster of emotions
+    - I am feeling inspired by new experiences
+    - I feel light-hearted and free
+    - I am feeling connected to my heritage
+    - I feel excited about new opportunities
+    - I am feeling like I need to break free
+    - I feel supported by my family
+    - I am feeling valued by my friends
+    - I feel uncertain about my path
+    - I am feeling motivated to change
+    - I feel a sense of urgency in my life
+    - I am feeling like I need to express my feelings
+    - I feel surrounded by positivity
+    - I am feeling grateful for today’s challenges
+    - I feel a need to connect deeply
+    - I am feeling content in my choices
+    - I feel invigorated by my passions
+    - I am feeling burdened by my thoughts
+    - I feel energized by new ideas
+    - I am feeling uncertain about my direction
+    - I feel a sense of community around me
+    - I am feeling anxious about changes
+    - I feel strong in my beliefs
+    - I am feeling hopeful despite difficulties
+    - I feel inspired to keep moving forward
+    - I am feeling a sense of completion
+    - I feel grateful for every moment
+
+- intent: tell_weather
+  examples: |
+    - What's the weather in [Mumbai](city)?
+    - Tell me the weather in [Delhi](city)?
+    - What is the weather like in [Bangalore](city)?
+    - Can you check the weather in [Chennai](city)?
+    - How's the weather in [Kolkata](city)?
+    - What's the forecast for [Hyderabad](city)?
+    - Is it raining in [Pune](city)?
+    - What's the temperature in [Ahmedabad](city)?
+    - Can you tell me the current weather in [Jaipur](city)?
+    - What's the weather report for [Lucknow](city)?
+    - How hot is it in [Surat](city)?
+    - Is it sunny in [Visakhapatnam](city)?
+    - What's the weather like in [Kanpur](city)?
+    - Can you provide the weather update for [Nagpur](city)?
+    - What's the climate like in [Indore](city)?
+    - How's the weather in [Bhopal](city)?
+    - Is it snowing in [Shimla](city)?
+    - Can you tell me the weather for [Gurgaon](city)?
+    - What's the weather like today in [Chandigarh](city)?
+    - How's the weather looking for [Vadodara](city)?
+    - Is it foggy in [Dehradun](city)?
+    - What's the high and low for [Coimbatore](city)?
+    - Can you give me the weather details for [Agra](city)?
+    - How's the weather in [Nashik](city)?
+    - What's the UV index for [Mysore](city)?
+    - Is there a storm warning for [Ranchi](city)?
+    - What's the weather like next week in [Patna](city)?
+    - How's the humidity in [Raipur](city)?
+    - What's the weather outlook for [Thane](city)?
+    - Can you check the temperature in [Jodhpur](city)?
+    - How's the air quality in [Kochi](city)?
+    - What's the weather forecast for [Bhubaneswar](city)?
+    - How's the weather in [Puducherry](city)?
+    - Is it windy in [Siliguri](city)?
+    - What's the weather like in [Tirupati](city)?
+    - How's the weather at [Ranchi](city)?
+    - Can you tell me if it's raining in [Gwalior](city)?
+    - What's the weather situation in [Udaipur](city)?
+    - Is it cloudy in [Mangalore](city)?
+    - What's the current weather in [Kochi](city)?
+    - How's the weather for tomorrow in [Durgapur](city)?
+    - What's the forecast for the weekend in [Bareilly](city)?
+    - Is it chilly in [Agartala](city)?
+    - What's the weather in [Imphal](city)?
+    - Can you tell me about the weather in [Gangtok](city)?
+      - What's the weather in [New York](city)?
+    - Tell me the weather in [London](city)?
+    - What is the weather like in [Tokyo](city)?
+    - Can you check the weather in [Sydney](city)?
+    - How's the weather in [Paris](city)?
+    - What's the forecast for [Berlin](city)?
+    - Is it raining in [Moscow](city)?
+    - What's the temperature in [Rio de Janeiro](city)?
+    - Can you tell me the current weather in [Cairo](city)?
+    - What's the weather report for [Toronto](city)?
+    - How hot is it in [Dubai](city)?
+    - Is it sunny in [Los Angeles](city)?
+    - What's the weather like in [Rome](city)?
+    - Can you provide the weather update for [Bangkok](city)?
+    - What's the climate like in [Amsterdam](city)?
+    - How's the weather in [Madrid](city)?
+    - Is it snowing in [Toronto](city)?
+    - Can you tell me the weather for [Cape Town](city)?
+    - What's the weather like today in [Singapore](city)?
+    - How's the weather looking for [Beijing](city)?
+    - Is it foggy in [San Francisco](city)?
+    - What's the high and low for [Nairobi](city)?
+    - Can you give me the weather details for [Santiago](city)?
+    - How's the weather in [Helsinki](city)?
+    - What's the UV index for [Lisbon](city)?
+    - Is there a storm warning for [Chicago](city)?
+    - What's the weather like next week in [Buenos Aires](city)?
+    - How's the humidity in [Mexico City](city)?
+    - What's the weather outlook for [Kuala Lumpur](city)?
+    - Can you check the temperature in [Wellington](city)?
+    - How's the air quality in [Madrid](city)?
+    - What's the weather forecast for [Athens](city)?
+    - How's the weather in [Zurich](city)?
+    - Is it windy in [Stockholm](city)?
+    - What's the weather like in [Vienna](city)?
+    - How's the weather at [Hanoi](city)?
+    - Can you tell me if it's raining in [Lisbon](city)?
+    - What's the weather situation in [Oslo](city)?
+    - Is it cloudy in [Budapest](city)?
+    - What's the current weather in [Dublin](city)?
+    - How's the weather for tomorrow in [Edinburgh](city)?
+    - What's the forecast for the weekend in [Lima](city)?
+    - Can you tell me about the weather in [Copenhagen](city)?
+    - What's the weather in [Hong Kong](city)?
+    - How's the weather in [Stockholm](city)?
+    - Is it chilly in [Tallinn](city)?
+    - What's the weather like in [Bangalore](city)?
+    - Can you check the weather in [Catania](city)?
+    - How's the weather in [Krakow](city)?
+    - What's the temperature in [Tunis](city)?
+    - Is it foggy in [Amsterdam](city)?
+    - What's the weather report for [Sarajevo](city)?
+    - How's the weather in [Valencia](city)?
+    - What's the forecast for [Seoul](city)?
+    - Is there a chance of rain in [Belfast](city)?
+    - What's the weather like in [Brisbane](city)?
+    - Can you tell me the current temperature in [Glasgow](city)?
+    - What's the weather like in [Osaka](city)?
+    - How's the weather in [Lisbon](city)?
+    - What's the high and low for [Helsinki](city)?
+    - Is it sunny in [Cairo](city)?
+    - What's the weather like today in [Berlin](city)?
+    - Can you provide a weather update for [Chennai](city)?
+    - How's the weather in [Brussels](city)?
+    - What's the forecast for [Nairobi](city)?
+    - Is it raining in [Edinburgh](city)?
+    - How's the weather in [Budapest](city)?
+    - What's the temperature in [Havana](city)?
+    - Is it windy in [Cape Town](city)?
+    - What's the current weather in [Bangkok](city)?
+    - How's the weather for tomorrow in [Auckland](city)?
+    - What's the weather situation in [Oslo](city)?
+    - Is it cold in [Helsinki](city)?
+    - How's the weather in [Mumbai](city)?
+    - What's the weather in [Rio de Janeiro](city)?
+    - Can you check the weather in [Kolkata](city)?
+    - What's the weather like in [Phoenix](city)?
+    - How's the weather in [Montreal](city)?
+    - What's the high and low for [Lisbon](city)?
+    - Is it cloudy in [Lagos](city)?
+    - What's the weather like in [Milan](city)?
+    - How's the weather looking for [Manila](city)?
+    - What's the forecast for [Detroit](city)?
+    - Can you provide the weather update for [San Diego](city)?
+    - How's the air quality in [Montreal](city)?
+    - What's the weather like today in [Tampa](city)?
+    - Is it humid in [Orlando](city)?
+    - What's the temperature in [Zurich](city)?
+    - How's the weather for the weekend in [Phoenix](city)?
+    - What's the current weather in [Antwerp](city)?
+    - Can you tell me if it's raining in [Las Vegas](city)?
+    - How's the weather in [Brisbane](city)?
+    - What's the weather report for [Valparaiso](city)?
+    - Is it chilly in [Edmonton](city)?
+    - What's the weather like in [Riga](city)?
+    - How's the weather in [Jakarta](city)?
+    - What's the weather outlook for [Cairo](city)?
+    - Can you check the weather in [Seville](city)?
+    - How's the weather today in [Copenhagen](city)?
+    - What's the weather like in [Belgrade](city)?
+    - Is it raining in [Catania](city)?
+    - What's the weather report for [Nairobi](city)?
+    - Can you tell me the current temperature in [Helsinki](city)?
+    - How's the weather for tomorrow in [Tokyo](city)?
+    - What's the forecast for [Warsaw](city)?
+    - Is it sunny in [Amsterdam](city)?
+    - What's the weather like today in [Sofia](city)?
+    - Can you provide a weather update for [Berlin](city)?
+    - How's the weather in [Brussels](city)?
+    - What's the temperature in [Buenos Aires](city)?
+    - Is it windy in [Santiago](city)?
+    - What's the weather like in [Florence](city)?
+    - How's the weather in [Sofia](city)?
+    - What's the current weather in [Catania](city)?
+    - Can you tell me the weather for [Mexico City](city)?
+    - What's the weather situation in [Edinburgh](city)?
+    - Is it hot in [Los Angeles](city)?
+    - How's the weather in [Toronto](city)?
+    - What's the weather like in [Dubai](city)?
+    - Can you check the weather in [Helsinki](city)?
+    - How's the air quality in [Montreal](city)?
+    - What's the weather like today in [Lisbon](city)?
+    - Is it rainy in [Moscow](city)?
+    - What's the forecast for [Toronto](city)?
+    - How's the weather looking for [Rio de Janeiro](city)?
+    - What's the weather in [Hanoi](city)?
+    - Can you provide a weather update for [Singapore](city)?
+    - How's the weather today in [Amsterdam](city)?
+    - What's the current temperature in [Oslo](city)?
+    - Is it foggy in [Tallinn](city)?
+    - What's the weather like in [Warsaw](city)?
+    - Can you check the weather in [Lisbon](city)?
+    - How's the weather for tomorrow in [Brussels](city)?
+    - What's the weather situation in [Prague](city)?
+    - Is it chilly in [Belfast](city)?
+    - What's the weather report for [Rio de Janeiro](city)?
+    - Can you tell me about the weather in [Lima](city)?
+    - How's the weather in [Buenos Aires](city)?
+    - What's the temperature in [London](city)?
+    - Is it sunny in [Dublin](city)?
+    - What's the weather like today in [Edinburgh](city)?
+    - How's the weather in [Singapore](city)?
+    - What's the forecast for [Helsinki](city)?
+    - Can you check the weather in [Berlin](city)?
+    - How's the air quality in [Kuala Lumpur](city)?
+    - What's the weather like today in [Seoul](city)?
+    - Is it snowing in [Dublin](city)?
+    - What's the weather in [Amsterdam](city)?
+    - Can you tell me the weather for [Osaka](city)?
+    - What's the current weather in [Helsinki](city)?
+    - How's the weather for tomorrow in [Stockholm](city)?
+    - What's the forecast for [Valencia](city)?
+    - Is it rainy in [Milan](city)?
+    - What's the weather situation in [Moscow](city)?
+    - Can you provide a weather update for [Montreal](city)?
+    - How's the weather in [Copenhagen](city)?
+    - What's the weather in [New York](city)?
+    - Tell me the weather in [Paris](city)?
+    - What is the weather like in [London](city)?
+    - Can you check the weather in [Tokyo](city)?
+    - What's the forecast for [Berlin](city)?
+    - How's the weather in [Sydney](city)?
+    - Is it raining in [Mumbai](city)?
+    - What's the temperature in [Cairo](city)?
+    - Can you tell me the current weather in [Toronto](city)?
+    - What's the weather report for [Moscow](city)?
+    - How hot is it in [Dubai](city)?
+    - Is it sunny in [Los Angeles](city)?
+    - What's the weather like in [Rio de Janeiro](city)?
+    - Can you provide the weather update for [Madrid](city)?
+    - What's the climate like in [Bangkok](city)?
+    - How's the weather in [Cape Town](city)?
+    - Is it snowing in [Amsterdam](city)?
+    - Can you tell me the weather for [Singapore](city)?
+    - What's the weather like today in [Seoul](city)?
+    - How's the weather looking for [San Francisco](city)?
+    - Is it foggy in [London](city)?
+    - What's the high and low for [Brisbane](city)?
+    - Can you give me the weather details for [Athens](city)?
+    - How's the weather in [Helsinki](city)?
+    - What's the UV index for [Lisbon](city)?
+    - Is there a storm warning for [Chicago](city)?
+    - What's the weather like next week in [Buenos Aires](city)?
+    - How's the humidity in [Jakarta](city)?
+    - What's the weather outlook for [Santiago](city)?
+    - Can you check the temperature in [Dublin](city)?
+    - How's the air quality in [Mexico City](city)?
+    - What's the weather forecast for [Nairobi](city)?
+    - How's the weather in [Budapest](city)?
+    - Is it windy in [Stockholm](city)?
+    - What's the weather like in [Vienna](city)?
+    - How's the weather at [Lagos](city)?
+    - Can you tell me if it's raining in [Kuala Lumpur](city)?
+    - What's the weather situation in [Rio de Janeiro](city)?
+    - Is it cloudy in [Portland](city)?
+    - What's the current weather in [Wellington](city)?
+    - How's the weather for tomorrow in [Edinburgh](city)?
+    - What's the forecast for the weekend in [Tel Aviv](city)?
+    - Is it chilly in [Seattle](city)?
+    - What's the weather in [Oslo](city)?
+    - Can you tell me about the weather in [Copenhagen](city)?
+    - How's the temperature in [Manila](city)?
+    - What's the weather for the holiday in [Zurich](city)?
+
+- intent: tell_joke
+  examples: |
+    - Tell me a joke
+    - Can you make me laugh?
+    - I want to hear a funny joke
+    - Give me a good joke
+    - Do you know any jokes?
+    - Make me chuckle
+    - Tell me something funny
+    - Hit me with a joke
+    - Can you tell a silly joke?
+    - I need a laugh
+    - What's a funny joke?
+    - Share a joke with me
+    - I want a good laugh
+    - Can you crack a joke?
+    - Tell me your best joke
+    - Give me a laugh
+    - Make me smile with a joke
+    - How about a joke?
+    - What’s a good one-liner?
+    - Can you lighten the mood with a joke?
+    - I’m in the mood for some humor
+    - Do you have any corny jokes?
+    - Share a pun with me
+    - Give me a light-hearted joke
+    - Tell me a pun
+    - What's your favorite joke?
+    - Can you tell a dad joke?
+    - I'm looking for a quick laugh
+    - Hit me with a funny line
+    - I love jokes, can you tell me one?
+    - I need something funny to cheer me up
+    - What’s the funniest thing you know?
+    - Can you tell a classic joke?
+    - Tell me a joke that kids would love
+    - Share a witty joke with me
+    - What's a great icebreaker joke?
+    - I could use a good laugh
+    - Tell me a joke to lighten the mood
+    - Can you tell me something amusing?
+    - I want a humorous take on something
+    - Can you throw in a funny story?
+    - I’m craving some humor, any jokes?
+    - Give me a chuckle-worthy joke
+    - Can you share a laugh with me?
+    - Hit me with a punchline!
+    - Tell me a joke that makes me think
+    - I want to hear a humorous anecdote
+    - Can you lighten things up with humor?
+    - What's a witty comeback joke?
+    - I could use a laugh right now
+    - Can you hit me with a funny story?
+    - What’s your go-to joke?
+    - Can you share a corny pun?
+    - I'm in the mood for some giggles
+    - Tell me a joke that’s kid-friendly
+    - What's a good joke to share with friends?
+    - Make me laugh with a silly joke
+    - Can you brighten my day with humor?
+    - I’d love to hear a lighthearted story
+    - What’s a great pun for a laugh?
+    - Can you tell me a clever joke?
+    - Hit me with your best one-liner
+    - What’s a joke that always gets a laugh?
+    - Can you tell a funny story?
+    - I need something humorous in my life
+    - Share a classic joke with me
+    - Can you make me giggle?
+    - What’s a funny line to tell?
+    - Tell me something that’ll make me smile
+    - Give me a laugh, please!
+    - I want to hear a hilarious joke
+    - Can you come up with a funny quip?
+    - I’d appreciate a light-hearted joke
+    - Can you share a humorous anecdote?
+    - Tell me a joke about animals
+    - What’s the funniest thing you’ve heard?
+    - I’m ready for a good chuckle
+    - Can you tell a quick joke?
+    - What’s a joke that’s really clever?
+    - Make me laugh with a witty line
+    - Can you share a pun that’ll crack me up?
+    - I want to hear a joke that’s fun
+    - Can you tell me a joke for kids?
+    - Give me something to giggle about
+    - Can you tell a funny riddle?
+    - I’m looking for a laugh, hit me!
+    - Tell me your funniest story
+    - What's a great joke for a gathering?
+    - Can you share a cheeky joke?
+    - I want to hear something amusing
+    - Tell me a light joke for a good mood
+    - What's a clever play on words?
+    - Can you tell a joke about food?
+    - I need a pick-me-up, can you help?
+    - Can you tell me a classic dad joke?
+    - Share a light-hearted joke with me
+    - What’s a silly line you love?
+    - Make me laugh with a fun pun
+    - Can you tell me a joke about work?
+    - What’s a joke that never fails?
+    - Hit me with a giggle!
+    - I’m in need of some humor today
+    - Tell me a joke about relationships
+    - What’s a good joke for a family dinner?
+    - Can you lighten my mood with a joke?
+    - Give me a reason to smile!
+    - Tell me a clever quip that’s funny
+    - What’s a joke about kids?
+    - Share a funny observation with me
+    - Can you tell me a joke that’s relevant today?
+    - I want to hear a good icebreaker joke
+    - Make me laugh with a joke from your repertoire
+    - What’s a good way to make someone smile?
+    - Tell me a funny one-liner to share
+    - Can you share a joke that’s both funny and smart?
+    - Give me a laugh with a quirky joke
+    - Tell me a humorous take on a common situation
+    - What’s a joke about animals that’s funny?
+    - Can you tell me a nostalgic joke?
+    - Hit me with a fun play on words
+    - I’d love to hear a joke that’s witty
+    - Can you share a laugh with me?
+    - Tell me a joke to cheer me up
+    - What’s a humorous quip about life?
+    - I want to hear a silly joke about kids
+    - Make me smile with a clever punchline
+    - What’s a classic joke that always works?
+    - Can you share something funny?
+    - Tell me a joke about the weather
+    - I’d love to hear a funny saying
+    - Hit me with a humorous story
+    - What’s a good pun for today?
+    - Can you make me laugh with a riddle?
+    - I want to hear a silly knock-knock joke
+    - Tell me a joke that’s perfect for a party
+    - Can you lighten the mood with humor?
+    - What’s a joke that’s simple but funny?
+    - Make me chuckle with a witty remark
+    - Tell me a joke about sports
+    - What’s a humorous comment you like?
+    - Can you share a fun fact with a punchline?
+    - I need a laugh, what’s a good joke?
+    - Tell me a silly joke about food
+    - Can you share something that’ll make me smile?
+    - What’s a light-hearted joke about school?
+    - Make me giggle with a clever joke
+    - Can you tell me a funny story from your life?
+    - I want to hear a quirky joke
+    - Tell me a joke that’s clever and quick
+    - What’s a pun that’ll brighten my day?
+    - Can you tell a joke about a holiday?
+    - I need something funny, can you help?
+    - What’s a good joke for kids to enjoy?
+    - Share a laugh with a pun or two
+    - Tell me a joke that’s relatable
+    - Can you make me smile with a quick joke?
+    - What’s a classic joke that everyone loves?
+    - Hit me with a funny anecdote!
+    - I want to hear something light and funny
+    - What’s a good joke to break the ice?
+    - Can you share a humorous take on relationships?
+    - I’m looking for a pun to brighten my day
+    - Tell me a funny story about work
+    - What’s a silly joke about animals?
+    - Can you tell me a joke that’s a bit cheeky?
+    - I’d love to hear a classic one-liner
+    - Make me laugh with a good punchline
+    - What’s a humorous quip about friendship?
+    - Can you tell me a joke about family?
+    - What’s a light-hearted comment you enjoy?
+    - I want to hear a funny joke about life
+    - Tell me something silly to make me laugh
+    - Can you share a quirky joke about travel?
+    - What’s a joke that makes you giggle?
+    - Hit me with a humorous line!
+    - I’m looking for something funny right now
+    - What’s a witty joke that’s always a hit?
+    - Make me smile with a silly pun
+    - Tell me a joke about a profession
+    - Can you share a funny line to tell at parties?
+    - I want to hear a great joke to share
+    - What’s a clever joke about technology?
+    - Can you make me laugh with a corny joke?
+    - Tell me a light-hearted joke that’s fun
+    - What’s a funny observation about life?
+    - Share a witty comeback that’s amusing
+    - Hit me with a classic joke!
+    - I want to hear a silly joke that’s timeless
+    - Can you tell me a joke that’s clever and cute?
+    - What’s a humorous anecdote you love?
+    - Make me laugh with a witty line!
+    - What’s a good joke to tell in class?
+    - Can you tell me a funny joke about work?
+    - Tell me a joke that’s punny!
+    - I need a laugh, can you help me out?
+    - Share a quick joke with a punchline
+    - What’s a joke that’ll tickle my funny bone?
+    - Can you tell me a funny riddle to ponder?
+    - I’m looking for a classic laugh!
+    - What’s a silly joke that kids love?
+    - Tell me something funny to lighten the mood
+    - Can you share a clever one-liner?
+    - I want to hear a humorous take on something
+    - Hit me with a funny line about work!
+    - What’s a joke that’s clever and memorable?
+    - Can you tell me a silly joke that’ll make me chuckle?
+    - What’s a good joke for a friend?
+    - Share a pun that’ll get a laugh
+    - I’d love to hear a funny line to share
+    - What’s a joke that’s sure to make me laugh?
+    - Can you tell me a light-hearted story?
+    - I need a giggle, can you help me?
+    - Tell me a joke that’ll make me smile!
+    - What’s a funny line about life?
+    - Can you make me laugh with a light joke?
+    - Tell me a quirky joke that’s silly
+    - I want to hear a classic joke for laughs
+    - Share a funny saying that makes you smile
+    - What’s a joke that works for everyone?
+    - Can you share a humorous anecdote?
+    - I’m looking for a clever punchline!
+    - Tell me a funny riddle that’s short
+    - Make me chuckle with a quick quip
+    - What’s a good joke for a social gathering?
+    - Can you tell me a silly joke about food?
+    - I want to hear something that’s laugh-out-loud funny
+    - Hit me with a humorous take on life!
+    - What’s a good pun for a laugh?
+    - Can you make me giggle with a quirky joke?
+    - Tell me a joke about relationships
+    - What’s a classic one-liner you enjoy?
+    - Share a joke that’s perfect for kids
+    - I’m in the mood for a funny pun!
+    - Can you tell me a joke that’s clever?
+    - Tell me a funny story that’ll make me smile
+    - What’s a joke about friendship that’s funny?
+    - Can you share a humorous line that’s relatable?
+    - I want to hear a silly joke about life
+    - Make me laugh with a clever quip!
+    - What’s a good joke that’s fun to tell?
+    - Can you tell me a joke that’s short and sweet?
+    - Tell me a light-hearted story about work
+    - What’s a funny saying you like?
+    - I need a good chuckle, can you help?
+    - Share a humorous take on travel!
+    - What’s a silly joke about family?
+    - Can you hit me with a funny story?
+    - Tell me a joke that’s quick and amusing
+    - What’s a classic joke everyone knows?
+    - Can you share a funny line from a movie?
+    - I want to hear something amusing right now
+    - Hit me with a humorous anecdote!
+    - What’s a clever play on words you like?
+    - Can you tell me a joke about the weekend?
+    - I’m looking for a funny line to tell!
+    - Tell me a joke about a hobby
+    - What’s a witty quip that’s timeless?
+    - Share something light-hearted and funny
+    - I want to hear a clever joke that’s fun
+    - Can you tell me a joke that’s quick-witted?
+    - What’s a good icebreaker joke for a crowd?
+    - Tell me a funny story that’s uplifting
+    - Can you share a humorous quip about work?
+    - What’s a joke that’s great for a laugh?
+    - Hit me with a funny pun or two!
+    - I want to hear a silly joke about travel
+    - Tell me something funny to brighten my day
+    - Can you share a light-hearted comment?
+    - What’s a classic joke that gets everyone laughing?
+    - I need a laugh; what’s a good joke?
+    - Share a funny line that’ll make me smile!
+    - What’s a quirky joke about life?
+    - Can you tell me a humorous line to cheer me up?
+    - Tell me a joke that’s smart and funny
+    - What’s a light-hearted story you enjoy?
+    - Make me chuckle with a fun joke!
+    - I want to hear a funny story from your experience
+    - What’s a joke about food that’s amusing?
+    - Can you share a clever pun?
+    - Tell me something humorous to brighten my mood
+    - What’s a classic joke that’s light and funny?
+    - Can you tell me a silly riddle for fun?
+    - I’m looking for a good laugh, what do you have?
+    - What’s a funny line about being a parent?
+    - Hit me with a clever one-liner!
+    - Tell me a joke that’s simple yet hilarious
+    - Can you share something light and funny?
+    - What’s a good joke for a gathering of friends?
+    - I want to hear a humorous comment about work
+    - Make me smile with a funny pun
+    - Tell me a joke about a holiday that’s amusing
+    - Can you tell me a silly joke about animals?
+    - I’d love to hear a funny line to share with friends
+    - What’s a good icebreaker that’s funny?
+    - Hit me with a humorous story!
+    - I want to hear a joke about kids that’s funny
+    - Can you share a clever joke for adults?
+    - What’s a classic joke that’s always funny?
+    - Tell me a joke that’s clever and quick
+    - Make me laugh with a funny take on life!
+    - What’s a good joke for a party?
+    - Can you tell me a humorous quip about love?
+    - I need something funny; what do you have?
+    - Share a light-hearted joke that’s fun!
+    - What’s a quirky pun that makes you giggle?
+    - Can you tell me a joke that’ll make me smile?
+    - I want to hear a silly joke for a good laugh
+    - Hit me with a funny line to make me chuckle!
+
+- intent: ask_live_scores
+  examples: |
+    - What's the live score of the cricket match?
+    - Can you tell me the current score in the cricket game?
+    - How is the cricket match going?
+    - What’s the score in today’s cricket match?
+    - Give me the live cricket scores.
+    - What’s the latest score of the cricket match?
+    - How many runs did the team score in the cricket game?
+    - What’s the current score of the India vs Australia match?
+    - Can you provide the score of the ongoing cricket match?
+    - What’s the live score of the T20 match?
+    - How many wickets have fallen in the match?
+    - What’s the score of the IPL match?
+    - Who is winning the cricket match right now?
+    - What’s the run rate of the teams playing?
+    - Can I get the live updates of the cricket game?
+    - What’s the score in the second innings of the match?
+    - How many overs are remaining in the cricket match?
+    - What’s the latest score in the ODI match?
+    - Give me the score of the Test match.
+    - How’s the batting team performing?
+    - What’s the partnership score in the cricket match?
+    - How many runs does the chasing team need?
+    - What’s the highest score in the match so far?
+    - Who scored the most runs in today’s game?
+    - What’s the latest wicket in the cricket match?
+    - How is the pitch behaving in the match?
+    - Can you tell me the player of the match so far?
+    - What's the score after the powerplay?
+    - How many boundaries have been hit in the match?
+    - What's the latest over score in the match?
+    - What’s the current situation of the cricket game?
+    - Can you give me updates on the cricket score?
+    - What’s the score at the halfway mark of the innings?
+    - How many runs has the opener scored?
+    - What’s the score in the women's cricket match?
+    - Can you tell me the score of the PSL match?
+    - How many balls are left in the innings?
+    - What’s the required run rate for the chasing team?
+    - Who’s the leading run-scorer in today’s match?
+    - How many sixes have been hit in the match?
+    - What’s the score in the final overs of the match?
+    - Can I get the score updates for the cricket tournament?
+    - What’s the latest score in the ICC World Cup?
+    - How's the bowling team performing?
+    - What’s the score in the current Test series?
+    - Who took the last wicket in the match?
+    - Can you tell me the scores of both teams?
+    - What’s the run chase target for the batting team?
+    - How many runs are needed in the last over?
+    - What’s the score in the ongoing international match?
+    - How many centuries have been scored in the match?
+    - What’s the highest individual score in today’s game?
+    - How is the weather affecting the cricket match?
+    - Can you provide details on the current innings score?
+    - What’s the latest score for the Bangladesh vs India match?
+    - How many runs did the last batsman score?
+    - Who is the top bowler in today’s match?
+    - What's the current score of the England vs South Africa match?
+    - How many overs have been bowled in the match?
+    - What's the score after the first 10 overs?
+    - Can I have updates on the score of the Ashes series?
+    - What’s the score in the final match of the tournament?
+    - How many extras have been given by the bowling team?
+    - What’s the score at the end of the innings?
+    - Who hit the most sixes in today’s game?
+    - What’s the run rate required to win the match?
+    - How is the fielding performance in the match?
+    - What’s the score in the second T20 match?
+    - Can you tell me the score for the ongoing series?
+    - How many runs were scored in the last over?
+    - What's the latest score of the Big Bash League?
+    - What’s the score of the match between Pakistan and Sri Lanka?
+    - Who is the highest wicket-taker in the match?
+    - What’s the score of the Australia vs India Test match?
+    - How many runs does the opener have?
+    - What's the current score of the ODI series?
+    - What’s the status of the T20 World Cup match?
+    - How many wickets are left for the batting team?
+    - What’s the latest update on the cricket scores?
+    - What’s the score in the ongoing IPL match?
+    - Who is leading in the cricket match?
+    - How many runs has the captain scored?
+    - What’s the score after 20 overs?
+    - Can I get the score updates for the World Test Championship?
+    - What’s the score in the under-19 cricket match?
+    - How many runs does the team need to win?
+    - What’s the score of the Asia Cup match?
+    - Who scored the fastest fifty in the match?
+    - What’s the latest wicket taken in the game?
+    - How many runs did the team chase successfully?
+    - What’s the score in the county cricket match?
+    - How many overs has the bowling team completed?
+    - What’s the latest score for the domestic T20 league?
+    - How many runs did the last partnership add?
+    - What’s the score in the international T20 match?
+    - Who has the best bowling figures in today’s match?
+    - What’s the score of the cricket tournament final?
+    - How many runs were scored in the last innings?
+    - What’s the score in the Super Over?
+    - What’s the latest score of the cricket league?
+    - How is the new ball performing in the match?
+    - What’s the score in the historic cricket match?
+    - Can you tell me the top scores of the day?
+    - What’s the score of the last Test match played?
+    - Who has taken the most catches in the match?
+    - What’s the latest score in the cricket series?
+    - How many runs has the number three batsman scored?
+    - What’s the score in the club cricket match?
+    - Who is performing well in the ongoing match?
+    - What’s the score in the local cricket tournament?
+    - How many wickets has the team taken so far?
+    - What’s the score of the friendly cricket match?
+    - What’s the latest score of the cricket club?
+    - How is the match progressing?
+    - What’s the score in the quarterfinals of the tournament?
+    - Can you tell me the player statistics from the match?
+    - What’s the score of the semifinals match?
+    - How many runs did the batting team score in the last over?
+    - What’s the score of the historical match?
+    - How many players are left to bat?
+    - What’s the score in the cricket championship?
+    - Who is the highest scorer in the tournament?
+    - What’s the score of the women's T20 match?
+    - Can you give me the cricket match score summary?
+    - What’s the score of the exhibition cricket match?
+    - How many runs has the last batsman scored?
+    - What’s the current score in the cricket league?
+    - Can you tell me the live score updates?
+    - How many runs did the opening partnership put on?
+    - What’s the score in the national cricket championship?
+    - What’s the score of the cricket match between rivals?
+    - How many overs are left in the game?
+    - What’s the current score for the cricket playoffs?
+    - Who hit the winning runs in the match?
+    - How is the crowd reacting to the game?
+    - What’s the score of the Test match series?
+    - Who is the leading wicket-taker in the tournament?
+    - What’s the score at the end of day one?
+    - What’s the score in the last ODI match?
+    - How many runs did the team score in the last match?
+    - What’s the score in the 3rd T20 match?
+    - Can you tell me the latest player stats?
+    - What’s the score for the U-19 World Cup match?
+    - How many wickets are left to take in the innings?
+    - What’s the score in the last league match?
+    - Who took the most wickets in today’s game?
+    - What’s the score in the cricket playoff match?
+    - How many runs did the second batsman score?
+    - What’s the score in the cricket league final?
+    - Can I get updates for the ongoing match?
+    - What’s the current score in the league stage?
+    - How many runs did the team score in the first innings?
+    - What’s the score in the cricket match today?
+    - How many wickets are remaining for the bowling team?
+    - What’s the score of the cricket friendly match?
+    - Can you tell me about the player’s performances?
+    - What’s the latest score in the cricket knockout?
+    - How many runs are required in the final overs?
+    - What’s the score of the under-19 league match?
+    - Who is the top scorer in the tournament so far?
+    - What’s the score in the cricket rivalry match?
+    - How many balls are remaining in the match?
+    - What’s the score of the last domestic match?
+    - Can you give me the details of the match summary?
+    - What’s the score in the T20 league?
+    - How many wickets have fallen in the last over?
+    - What’s the score in the first ODI match?
+    - Who scored the most runs for the team?
+    - What’s the score of the local cricket league?
+    - How many runs did the batting team score in total?
+    - What’s the score in the international series?
+    - How many overs did the bowling team complete?
+    - What’s the latest score for the World Cup match?
+    - What’s the score in the current knockout match?
+    - How many wickets did the team take in the innings?
+    - What’s the score of the Test series so far?
+    - Who scored the fastest century in the match?
+    - What’s the score of the cricket exhibition match?
+    - How many runs did the batting team chase down?
+    - What’s the score in the league matches today?
+    - Can you tell me the latest match statistics?
+    - What’s the score in the final match of the league?
+    - How many overs are left in the second innings?
+    - What’s the score in the cricket challenge match?
+    - How many runs did the last two batsmen score?
+    - What’s the score in the historic Test match?
+    - What’s the score of the ongoing series match?
+    - How many wickets are required to win the match?
+    - What’s the score of the women's league match?
+    - Can you provide updates on the match status?
+    - What’s the score for the cricket match today?
+    - How many runs were scored in the last match?
+    - What’s the score in the league final match?
+    - What’s the score of the final Test match?
+    - Who hit the most runs for the team in the match?
+    - How many wickets fell in the last over?
+    - What’s the score in the cricket challenge tournament?
+    - What’s the score of the ongoing series match?
+    - Can I have live updates for the cricket game?
+    - What’s the score in the domestic T20 league?
+    - How many runs did the last partnership add?
+    - What’s the score in the current tournament?
+    - Who is leading the runs table in the series?
+    - What’s the score of the Test match today?
+    - How many wickets did the team lose?
+    - What’s the score in the local championship match?
+    - Can you provide the latest score for the cricket match?
+    - What’s the score in the cricket tournament?
+    - How many runs does the team need in the last over?
+    - What’s the score of the cricket match today?
+    - How many boundaries have been hit in the match?
+    - What’s the score in the women's cricket league?
+    - What’s the score for the U-19 cricket tournament?
+    - How many runs did the last batsman score?
+    - What’s the score of the current league match?
+    - How many runs does the team need to win?
+    - What’s the score in the international cricket series?
+    - Who took the most wickets in the tournament?
+    - What’s the score in the last Test match played?
+    - What’s the score of the domestic league match?
+    - How many runs did the batting team score overall?
+    - What’s the score in the knockout stage of the tournament?
+    - What’s the score in the Test match series?
+    - Who is the highest run-scorer in the match?
+    - How many runs did the team score in the last match?
+    - What’s the score of the latest ODI match?
+    - How many wickets are needed for the batting team?
+    - What’s the score of the cricket series match?
+    - How many runs did the batting team score in total?
+    - What’s the latest score of the IPL match?
+    - How many balls are left in the innings?
+    - What’s the score in the cricket finals today?
+    - What’s the score of the local T20 match?
+    - Who hit the most runs for the team in today’s match?
+    - What’s the score of the last international match?
+    - What’s the current score of the cricket match?
+    - How many wickets fell during the innings?
+    - What’s the score in the knockout match today?
+    - Can I get live updates on the cricket game?
+    - What’s the score in the current league matches?
+    - How many runs did the last two batsmen add?
+    - What’s the score of the international T20 match?
+    - What’s the score in the current Test series?
+    - Who took the last wicket in the match?
+    - What’s the score of the cricket tournament final?
+    - How many overs are left in the second innings?
+    - What’s the score of the Test match series?
+    - How many runs does the team need to chase down?
+    - What’s the score of the ongoing cricket series?
+    - What’s the score in the cricket match between rivals?
+    - How many wickets are remaining for the bowling team?
+    - What’s the latest score of the cricket playoffs?
+    - What’s the score of the cricket challenge match?
+    - How many runs did the last batsman score?
+    - What’s the score in the current league match?
+    - Can you tell me the latest statistics from the match?
+    - What’s the score in the T20 league match?
+    - How many wickets did the bowling team take in the innings?
+    - What’s the score in the historic cricket match?
+    - What’s the score of the final match today?
+    - How many runs does the batting team need in the last over?
+    - What’s the score of the cricket friendly match?
+    - How many runs were scored in the last innings?
+    - What’s the score in the ongoing series match?
+    - Who is the leading run-scorer in the tournament?
+    - What’s the score of the final Test match played today?
+    - How many wickets did the team take in the last match?
+    - What’s the score in the cricket tournament finals?
+    - Can you provide updates for the match in progress?
+    - What’s the score in the current ODI match?
+    - How many runs were scored by the top batsman?
+    - What’s the score of the domestic T20 tournament?
+    - How many wickets did the bowling team lose?
+    - What’s the score in the current Test match series?
+    - How many runs did the team score in the playoffs?
+    - What’s the score in the cricket league today?
+    - How many balls are remaining in the last over?
+    - What’s the score for the latest international match?
+    - Can you tell me the latest scores from the tournament?
+    - What’s the score in the local cricket championship?
+    - How many runs did the batting team score today?
+    - What’s the score in the current T20 series?
+    - How many wickets are left for the bowling team?
+    - What’s the score of the latest Test match?
+    - What’s the score of the cricket match today?
+    - How many boundaries were hit in the match?
+    - What’s the score of the women's cricket league?
+    - How many runs did the last partnership add?
+    - What’s the score of the cricket match right now?
+    - Who is the highest scorer in today’s game?
+    - What’s the latest score of the ODI match?
+    - How many runs did the team score in the last ODI?
+    - What’s the score in the quarterfinals of the cricket league?
+    - Who is leading in the cricket match today?
+    - What’s the score in the last international Test match?
+    - How many wickets did the bowling team take in the last match?
+    - What’s the score in the ongoing series match?
+    - What’s the score of the latest cricket tournament?
+    - How many runs did the team score in the last innings?
+    - What’s the score in the current domestic match?
+    - Who is the top scorer in the Test match series?
+    - What’s the score of the last T20 match played?
+    - Can I have updates for the ongoing international match?
+    - What’s the score in the current league stage?
+    - How many runs did the last two batsmen score?
+    - What’s the score in the cricket playoff match today?
+    - Who scored the fastest fifty in the last match?
+    - What’s the score in the cricket friendly match today?
+    - How many runs are needed in the final overs?
+    - What’s the score of the women's T20 match?
+    - What’s the score of the U-19 cricket tournament match?
+    - How many runs did the last batsman score?
+    - What’s the score of the current league match?
+    - How many wickets does the batting team have left?
+    - What’s the score of the cricket match in progress?
+    - What’s the score in the cricket tournament finals?
+    - How many runs did the batting team score overall?
+    - What’s the score of the ongoing cricket series?
+    - Who is the highest wicket-taker in the match?
+    - How many runs did the team score in the last Test match?
+    - What’s the score of the last league match played?
+    - How many wickets did the bowling team take today?
+    - What’s the score in the latest cricket match?
+    - What’s the score of the cricket match right now?
+    - How many runs does the team need to win?
+    - What’s the score in the last T20 match played?
+    - Can I get updates for the current cricket match?
+    - What’s the score in the ongoing Test match series?
+    - How many boundaries have been hit in the match?
+    - What’s the score of the women's cricket league match?
+    - How many runs did the last batsman score?
+    - What’s the score of the ongoing international match?
+    - How many runs did the team score in the last match?
+    - What’s the score in the current ODI series?
+    - Who is the leading wicket-taker in the tournament?
+    - What’s the score of the Test match today?
+    - How many wickets did the team lose in the last match?
+    - What’s the score in the ongoing series match?
+    - How many runs did the batting team score in total?
+    - What’s the score in the cricket league today?
+    - Can you provide the latest statistics from the match?
+    - What’s the score of the final Test match today?
+    - How many runs did the batting team score today?
+    - What’s the score in the current T20 series?
+    - How many wickets does the bowling team need to take?
+    - What’s the score of the latest ODI match played?
+    - What’s the score of the cricket match today?
+    - How many runs were scored by the opening batsman?
+    - What’s the score of the local T20 tournament match?
+    - How many runs did the team score in the last ODI?
+    - What’s the score in the knockout stage of the tournament?
+    - What’s the score of the Test match series so far?
+    - How many wickets did the team take in the last match?
+    - What’s the score in the cricket tournament finals today?
+    - Can I get updates for the ongoing match in progress?
+    - What’s the score in the current ODI match?
+    - How many runs did the last two batsmen score?
+    - What’s the score in the cricket playoff match today?
+    - Who scored the fastest fifty in the last match?
+    - What’s the score in the cricket friendly match today?
+    - How many runs are needed in the final overs?
+    - What’s the score of the women's T20 match?
+    - What’s the score of the U-19 cricket tournament match?
+    - How many runs did the last batsman score?
+    - What’s the score of the current league match?
+    - How many wickets does the batting team have left?
+    - What’s the score of the cricket match in progress?
+    - What’s the score in the cricket tournament finals?
+    - How many runs did the batting team score overall?
+    - What’s the score of the ongoing cricket series?
+    - Who is the highest wicket-taker in the match?
+    - How many runs did the team score in the last Test match?
+    - What’s the score of the last league match played?
+    - How many wickets did the bowling team take today?
+    - What’s the score in the latest cricket match?
+    - What’s the score of the cricket match right now?
+    - How many runs does the team need to win?
+    - What’s the score in the last T20 match played?
+    - Can I get updates for the current cricket match?
+    - What’s the score in the ongoing Test match series?
+    - How many boundaries have been hit in the match?
+    - What’s the score of the women's cricket league match?
+    - How many runs did the last batsman score?
+    - What’s the score of the ongoing international match?
+    - How many runs did the team score in the last match?
+    - What’s the score in the current ODI series?
+    - Who is the leading wicket-taker in the tournament?
+    - What’s the score of the Test match today?
+    - How many wickets did the team lose in the last match?
+    - What’s the score in the ongoing series match?
+    - How many runs did the batting team score in total?
+    - What’s the score in the cricket league today?
+    - Can you provide the latest statistics from the match?
+    - What’s the score of the final Test match today?
+    - How many runs did the batting team score today?
+    - What’s the score in the current T20 series?
+    - How many wickets does the bowling team need to take?
+    - What’s the score of the latest ODI match played?
+
+- intent: calculate
+  examples: |
+    - what is [1](number1) [ + ](operation) [2](number2)?
+    - calculate [3](number1) [ - ](operation) [1](number2)
+    - find the result of [4](number1) [ * ](operation) [5](number2)
+    - what is [6](number1) [ / ](operation) [3](number2)?
+    - solve [10](number1) [ + ](operation) [15](number2)
+    - compute [8](number1) [ - ](operation) [2](number2)
+    - evaluate [12](number1) [ * ](operation) [3](number2)
+    - can you calculate [20](number1) [ / ](operation) [4](number2)?
+    - find out [15](number1) [ + ](operation) [5](number2)
+    - calculate [7](number1) [ - ](operation) [2](number2)
+    - what's [9](number1) [ * ](operation) [2](number2)?
+    - how much is [18](number1) [ / ](operation) [3](number2)?
+    - compute the result of [14](number1) [ + ](operation) [6](number2)
+    - what is [22](number1) [ - ](operation) [11](number2)?
+    - evaluate [5](number1) [ * ](operation) [3](number2)
+    - can you help me calculate [30](number1) [ / ](operation) [5](number2)?
+    - solve [25](number1) [ + ](operation) [15](number2)
+    - find [40](number1) [ - ](operation) [20](number2)
+    - calculate [35](number1) [ * ](operation) [2](number2)
+    - what's [50](number1) [ / ](operation) [10](number2)?
+    - evaluate [8](number1) [ + ](operation) [12](number2)
+    - compute [6](number1) [ - ](operation) [3](number2)
+    - what is [3](number1) [ * ](operation) [7](number2)?
+    - how much is [24](number1) [ / ](operation) [6](number2)?
+    - calculate [45](number1) [ + ](operation) [15](number2)
+    - solve [60](number1) [ - ](operation) [30](number2)
+    - what's [9](number1) [ * ](operation) [8](number2)?
+    - evaluate [80](number1) [ / ](operation) [4](number2)?
+    - can you calculate [100](number1) [ + ](operation) [50](number2)?
+    - find the result of [90](number1) [ - ](operation) [45](number2)
+    - what's [16](number1) [ * ](operation) [2](number2)?
+    - compute the sum of [11](number1) [ + ](operation) [9](number2)
+    - what is [7](number1) [ - ](operation) [5](number2)?
+    - solve [28](number1) [ * ](operation) [3](number2)
+    - can you help me calculate [36](number1) [ / ](operation) [4](number2)?
+    - find out [14](number1) [ + ](operation) [7](number2)
+    - calculate [18](number1) [ - ](operation) [9](number2)
+    - what's [21](number1) [ * ](operation) [2](number2)?
+    - how much is [72](number1) [ / ](operation) [8](number2)?
+    - compute [50](number1) [ + ](operation) [25](number2)
+    - evaluate [100](number1) [ - ](operation) [60](number2)
+    - what is [8](number1) [ * ](operation) [4](number2)?
+    - solve [48](number1) [ / ](operation) [6](number2)?
+    - can you calculate [5](number1) [ + ](operation) [15](number2)?
+    - find [3](number1) [ - ](operation) [1](number2)
+    - calculate [6](number1) [ * ](operation) [3](number2)
+    - what's [56](number1) [ / ](operation) [7](number2)?
+    - evaluate [23](number1) [ + ](operation) [12](number2)
+    - compute the difference of [10](number1) [ - ](operation) [4](number2)
+    - how much is [13](number1) [ * ](operation) [2](number2)?
+    - what is [32](number1) [ / ](operation) [8](number2)?
+    - solve [44](number1) [ + ](operation) [16](number2)
+    - find the result of [5](number1) [ - ](operation) [2](number2)
+    - calculate [7](number1) [ * ](operation) [8](number2)
+    - what's [81](number1) [ / ](operation) [9](number2)?
+    - can you help me calculate [10](number1) [ + ](operation) [25](number2)?
+    - evaluate [60](number1) [ - ](operation) [15](number2)
+    - what is [18](number1) [ * ](operation) [5](number2)?
+    - solve [90](number1) [ / ](operation) [10](number2)?
+    - find out [22](number1) [ + ](operation) [28](number2)
+    - calculate [17](number1) [ - ](operation) [5](number2)
+    - what's [6](number1) [ * ](operation) [9](number2)?
+    - how much is [20](number1) [ / ](operation) [4](number2)?
+    - compute [13](number1) [ + ](operation) [2](number2)
+    - evaluate [16](number1) [ - ](operation) [6](number2)
+    - what is [24](number1) [ * ](operation) [2](number2)?
+    - solve [72](number1) [ / ](operation) [8](number2)?
+    - can you calculate [35](number1) [ + ](operation) [15](number2)?
+    - find [55](number1) [ - ](operation) [30](number2)
+    - calculate [14](number1) [ * ](operation) [2](number2)
+    - what's [42](number1) [ / ](operation) [6](number2)?
+    - evaluate [20](number1) [ + ](operation) [10](number2)
+    - compute the result of [38](number1) [ - ](operation) [19](number2)
+    - how much is [11](number1) [ * ](operation) [3](number2)?
+    - what is [27](number1) [ / ](operation) [9](number2)?
+    - solve [4](number1) [ + ](operation) [5](number2)
+    - find the result of [8](number1) [ - ](operation) [3](number2)
+    - calculate [20](number1) [ * ](operation) [1](number2)
+    - what's [64](number1) [ / ](operation) [8](number2)?
+    - can you help me calculate [18](number1) [ + ](operation) [36](number2)?
+    - evaluate [13](number1) [ - ](operation) [4](number2)
+    - what is [33](number1) [ * ](operation) [3](number2)?
+    - solve [70](number1) [ / ](operation) [10](number2)?
+    - find out [6](number1) [ + ](operation) [9](number2)
+    - calculate [29](number1) [ - ](operation) [14](number2)
+    - what's [48](number1) [ * ](operation) [2](number2)?
+    - how much is [12](number1) [ / ](operation) [3](number2)?
+    - compute [7](number1) [ + ](operation) [8](number2)
+    - evaluate [10](number1) [ - ](operation) [5](number2)
+    - what is [21](number1) [ * ](operation) [4](number2)?
+    - solve [84](number1) [ / ](operation) [12](number2)?
+    - can you calculate [50](number1) [ + ](operation) [25](number2)?
+    - find [3](number1) [ - ](operation) [2](number2)
+    - calculate [100](number1) [ * ](operation) [0](number2)?
+    - what's [27](number1) [ / ](operation) [9](number2)?
+    - evaluate [15](number1) [ + ](operation) [15](number2)
+    - compute the difference of [90](number1) [ - ](operation) [30](number2)
+    - how much is [4](number1) [ * ](operation) [5](number2)?
+    - what is [36](number1) [ / ](operation) [6](number2)?
+    - solve [20](number1) [ + ](operation) [10](number2)
+    - find the result of [6](number1) [ - ](operation) [1](number2)
+    - calculate [30](number1) [ * ](operation) [2](number2)
+    - what's [42](number1) [ / ](operation) [7](number2)?
+    - can you help me calculate [16](number1) [ + ](operation) [4](number2)?
+    - evaluate [12](number1) [ - ](operation) [8](number2)
+    - what is [28](number1) [ * ](operation) [2](number2)?
+    - solve [100](number1) [ / ](operation) [10](number2)?
+    - find out [5](number1) [ + ](operation) [7](number2)
+    - calculate [80](number1) [ - ](operation) [20](number2)
+    - what's [54](number1) [ * ](operation) [3](number2)?
+    - how much is [72](number1) [ / ](operation) [9](number2)?
+    - compute [14](number1) [ + ](operation) [6](number2)
+    - evaluate [30](number1) [ - ](operation) [10](number2)
+    - what is [22](number1) [ * ](operation) [5](number2)?
+    - solve [24](number1) [ / ](operation) [3](number2)?
+    - can you calculate [15](number1) [ + ](operation) [5](number2)?
+    - find [2](number1) [ - ](operation) [1](number2)
+    - calculate [45](number1) [ * ](operation) [2](number2)
+    - what's [90](number1) [ / ](operation) [30](number2)?
+    - evaluate [14](number1) [ + ](operation) [10](number2)
+    - compute the result of [55](number1) [ - ](operation) [25](number2)
+    - how much is [7](number1) [ * ](operation) [5](number2)?
+    - what is [33](number1) [ / ](operation) [11](number2)?
+    - solve [6](number1) [ + ](operation) [3](number2)
+    - find the result of [5](number1) [ - ](operation) [1](number2)
+    - calculate [50](number1) [ * ](operation) [2](number2)
+    - what's [64](number1) [ / ](operation) [8](number2)?
+    - can you help me calculate [20](number1) [ + ](operation) [15](number2)?
+    - evaluate [10](number1) [ - ](operation) [5](number2)
+    - what is [18](number1) [ * ](operation) [5](number2)?
+    - solve [90](number1) [ / ](operation) [10](number2)?
+    - find out [22](number1) [ + ](operation) [28](number2)
+    - calculate [17](number1) [ - ](operation) [5](number2)
+    - what's [6](number1) [ * ](operation) [9](number2)?
+    - how much is [20](number1) [ / ](operation) [4](number2)?
+    - compute [13](number1) [ + ](operation) [2](number2)
+    - evaluate [16](number1) [ - ](operation) [6](number2)
+    - what is [24](number1) [ * ](operation) [2](number2)?
+    - solve [72](number1) [ / ](operation) [8](number2)?
+    - can you calculate [35](number1) [ + ](operation) [15](number2)?
+    - find [55](number1) [ - ](operation) [30](number2)
+    - calculate [14](number1) [ * ](operation) [2](number2)
+    - what's [42](number1) [ / ](operation) [6](number2)?
+    - evaluate [20](number1) [ + ](operation) [10](number2)
+    - compute the result of [38](number1) [ - ](operation) [19](number2)
+    - how much is [11](number1) [ * ](operation) [3](number2)?
+    - what is [27](number1) [ / ](operation) [9](number2)?
+    - solve [4](number1) [ + ](operation) [5](number2)
+    - find the result of [8](number1) [ - ](operation) [3](number2)
+    - calculate [20](number1) [ * ](operation) [1](number2)
+    - what's [64](number1) [ / ](operation) [8](number2)?
+    - can you help me calculate [18](number1) [ + ](operation) [36](number2)?
+    - evaluate [13](number1) [ - ](operation) [4](number2)
+    - what is [33](number1) [ * ](operation) [3](number2)?
+    - solve [70](number1) [ / ](operation) [10](number2)?
+    - find out [6](number1) [ + ](operation) [9](number2)
+    - calculate [29](number1) [ - ](operation) [14](number2)
+    - what's [48](number1) [ * ](operation) [2](number2)?
+    - how much is [12](number1) [ / ](operation) [3](number2)?
+    - compute [7](number1) [ + ](operation) [8](number2)
+    - evaluate [10](number1) [ - ](operation) [5](number2)
+    - what is [21](number1) [ * ](operation) [4](number2)?
+    - solve [84](number1) [ / ](operation) [12](number2)?
+    - can you calculate [50](number1) [ + ](operation) [25](number2)?
+    - find [3](number1) [ - ](operation) [2](number2)
+    - calculate [100](number1) [ * ](operation) [0](number2)?
+    - what's [27](number1) [ / ](operation) [9](number2)?
+    - evaluate [15](number1) [ + ](operation) [15](number2)
+    - compute the difference of [90](number1) [ - ](operation) [30](number2)
+    - how much is [4](number1) [ * ](operation) [5](number2)?
+    - what is [36](number1) [ / ](operation) [6](number2)?
+    - solve [20](number1) [ + ](operation) [10](number2)
+    - find the result of [6](number1) [ - ](operation) [1](number2)
+    - calculate [30](number1) [ * ](operation) [2](number2)
+    - what's [42](number1) [ / ](operation) [7](number2)?
+    - can you help me calculate [16](number1) [ + ](operation) [4](number2)?
+    - evaluate [12](number1) [ - ](operation) [8](number2)
+    - what is [28](number1) [ * ](operation) [2](number2)?
+    - solve [100](number1) [ / ](operation) [10](number2)?
+    - find out [5](number1) [ + ](operation) [7](number2)
+    - calculate [80](number1) [ - ](operation) [20](number2)
+    - what's [54](number1) [ * ](operation) [3](number2)?
+    - how much is [72](number1) [ / ](operation) [9](number2)?
+    - compute [14](number1) [ + ](operation) [6](number2)
+    - evaluate [30](number1) [ - ](operation) [10](number2)
+    
